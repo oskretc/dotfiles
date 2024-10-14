@@ -16,6 +16,8 @@ sudo apt install -y bat
 
 sudo apt install -y entr
 
+
+
 if [ ! -L ~/.local/bin/fd ]; then
   echo "creating fd link"
   ln -s $(which fdfind) ~/.local/bin/fd
@@ -60,7 +62,7 @@ else
 fi
 
 
-if ! command -v delta >&1 >/dev/null
+if ! command -v delta 2>&1 >/dev/null
 then
   echo "installing delta"
   wget https://github.com/dandavison/delta/releases/download/0.18.2/git-delta_0.18.2_amd64.deb
@@ -68,6 +70,43 @@ then
   rm git-delta_0.18.2_amd64.deb
 else
   echo "delta installed"
+fi
+
+
+if ! command -v skm 2>&1 >/dev/null
+then
+  echo "installing skm"
+  wget https://github.com/TimothyYe/skm/releases/latest/download/skm_0.8.6_Linux_i386.tar.gz
+  tar -xzf skm_0.8.6_Linux_i386.tar.gz skm
+  mv skm ~/.local/bin
+  rm skm_0.8.6_Linux_i386.tar.gz
+else
+  echo "skm installed"
+fi
+
+
+if ! command -v yazi 2>&1 >/dev/null
+then
+  echo "installing yazi"
+# Download the latest release
+wget https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-unknown-linux-gnu.zip
+
+# Unzip the downloaded file
+unzip yazi-x86_64-unknown-linux-gnu.zip
+
+# Move the extracted binary to ~/.local/bin
+mv yazi-x86_64-unknown-linux-gnu/yazi ~/.local/bin/
+
+mv yazi-x86_64-unknown-linux-gnu/ya ~/.local/bin/
+
+# Cleanup the downloaded zip file
+rm yazi-x86_64-unknown-linux-gnu.zip
+
+rm -R yazi-x86_64-unknown-linux-gnu
+
+ya pack -u
+else
+  echo "yazi installed"
 fi
 
 {{ end -}}

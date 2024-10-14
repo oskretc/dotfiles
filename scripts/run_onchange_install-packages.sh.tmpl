@@ -49,8 +49,8 @@ then
   echo "Installing hx"
   wget https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz
   tar xf helix-24.07-x86_64-linux.tar.xz  
-  mv ./helix-24.07-x86_64-linux/hx ~/.local/bin
-  mv -r ./helix-24.07-x86_64-linux/runtime ~/.config/helix
+  cp ./helix-24.07-x86_64-linux/hx ~/.local/bin
+  cp -r ./helix-24.07-x86_64-linux/runtime ~/.config/helix
   rm helix-24.07-x86_64-linux.tar.xz
   
   rm -R helix-24.07-x86_64-linux

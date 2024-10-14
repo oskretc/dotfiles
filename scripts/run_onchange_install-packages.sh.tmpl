@@ -14,4 +14,13 @@ sudo apt install -y restic
 
 sudo apt install -y bat
 
+sudo apt install -y entr
+
+ln -s $(which fdfind) ~/.local/bin/fd
+ln -s $(which batcat) ~/.local/bin/bat
+
+# Install fzf-tab 
+# https://github.com/Aloxaf/fzf-tab
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+
 {{ end -}}

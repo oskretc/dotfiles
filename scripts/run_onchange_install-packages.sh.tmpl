@@ -58,6 +58,17 @@ else
   echo "hx installed"
 fi
 
+if ! command -v zellij 2>&1 >/dev/null
+then
+  echo "Installing zellij"
+  wget https://github.com/zellij-org/zellij/releases/download/v0.40.1/zellij-x86_64-unknown-linux-musl.tar.gz 
+  tar -xzf  zellij-x86_64-unknown-linux-musl.tar.gz 
+  mv zellij ~/.local/bin
+  rm zellij-x86_64-unknown-linux-musl.tar.gz  
+else
+  echo "zellij installed"
+fi
+
 if [ ! -e ~/.oh-my-zsh/custom/plugins/fzf-tab ]; then
 # Install fzf-tab 
 # https://github.com/Aloxaf/fzf-tab

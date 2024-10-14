@@ -36,7 +36,7 @@ if [ ! -e ~/.oh-my-zsh/custom/plugins/fzf-tab ]; then
   git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 fi
 
-if [ -n "$(dpkg -s eza 2>/dev/null | grep 'Status: install ok installed')"]; then
+if [ -n "$(dpkg -s eza 2>/dev/null | grep 'Status: install ok installed')" ]; then
   echo "eza already installed"
 else
   echo "installing eza"

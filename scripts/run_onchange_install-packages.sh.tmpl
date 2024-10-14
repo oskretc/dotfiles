@@ -109,4 +109,13 @@ else
   echo "yazi installed"
 fi
 
+
+if ! command -v zoxide 2>&1 >/dev/null
+then
+  echo "installing zoxide"
+  curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+else
+  echo "zoxide installed"
+fi
+
 {{ end -}}

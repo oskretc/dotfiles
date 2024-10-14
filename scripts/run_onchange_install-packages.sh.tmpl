@@ -18,6 +18,7 @@ sudo apt install -y entr
 
 
 
+
 if [ ! -L ~/.local/bin/fd ]; then
   echo "creating fd link"
   ln -s $(which fdfind) ~/.local/bin/fd
@@ -31,6 +32,16 @@ else
   echo "bat already link"
 fi
 
+
+
+
+if [ ! -e ~/.oh-my-zsh ]; then
+  echo "Installing ohmyzsh"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "ohmyzsh installed"
+  
+fi
 
 if [ ! -e ~/.oh-my-zsh/custom/plugins/fzf-tab ]; then
 # Install fzf-tab 

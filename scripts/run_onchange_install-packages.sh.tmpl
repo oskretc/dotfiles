@@ -59,4 +59,15 @@ else
   echo "gdrive installed"
 fi
 
+
+if ! command -v delta >&1 >/dev/null
+then
+  echo "installing delta"
+  wget https://github.com/dandavison/delta/releases/download/0.18.2/git-delta_0.18.2_amd64.deb
+  sudo dpkg -i git-delta_0.18.2_amd64.deb
+  rm git-delta_0.18.2_amd64.deb
+else
+  echo "delta installed"
+fi
+
 {{ end -}}

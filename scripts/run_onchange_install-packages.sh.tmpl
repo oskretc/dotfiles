@@ -16,11 +16,24 @@ sudo apt install -y bat
 
 sudo apt install -y entr
 
-ln -s $(which fdfind) ~/.local/bin/fd
-ln -s $(which batcat) ~/.local/bin/bat
+if [ ! -L ~/.local/bin/fd ]; then
+  echo "creating fd link"
+  ln -s $(which fdfind) ~/.local/bin/fd
+else
+  echo "fd already linked"
+fi
+if [ ! -L ~/.local/bin/bat ]; then
+  echo "creating bat link"
+  ln -s $(which batcat) ~/.local/bin/bat
+else 
+  echo "bat already link"
+fi
 
+
+if [ ! -e ~/.oh-my-zsh/custom/plugins/fzf-tab ]
 # Install fzf-tab 
 # https://github.com/Aloxaf/fzf-tab
-git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+  git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+fi
 
 {{ end -}}

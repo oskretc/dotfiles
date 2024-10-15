@@ -39,3 +39,6 @@ alias cd="z"
 # alias wezterm='flatpak run org.wezfurlong.wezterm'
 alias cz="chezmoi edit"
 alias cua="chezmoi update -a"
+
+alias rustdev="zellij action new-tab --layout rustdev"
+

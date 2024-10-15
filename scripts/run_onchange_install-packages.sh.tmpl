@@ -110,16 +110,6 @@ else
 fi
 
 
-if ! command -v skm 2>&1 >/dev/null
-then
-  echo "installing skm"
-  wget https://github.com/TimothyYe/skm/releases/latest/download/skm_0.8.6_Linux_i386.tar.gz
-  tar -xzf skm_0.8.6_Linux_i386.tar.gz skm
-  mv skm ~/.local/bin
-  rm skm_0.8.6_Linux_i386.tar.gz
-else
-  echo "skm installed"
-fi
 
 
 if ! command -v yazi 2>&1 >/dev/null

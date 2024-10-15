@@ -234,4 +234,4 @@ customize_agnoster
 source_if_exists ~/.cargo/env
 
 
-echo 'eval "$(zellij setup --generate-auto-start zsh --compact)"' 
+echo 'eval "$(zellij setup --generate-auto-start zsh )"' 

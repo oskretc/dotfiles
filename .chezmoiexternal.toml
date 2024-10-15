@@ -1,11 +1,11 @@
-{{ $lazigitVersion := "0.44.1"}}
+{{ $lazygitVersion := "0.44.1"}}
 [".local/bin/lazygit"]
   type = "archive-file"
-  url = "https://github.com/jesseduffield/lazygit/releases/download/v0.44.1/lazygit_0.44.1_Linux_x86_64.tar.gz"
+  url = "https://github.com/jesseduffield/lazygit/releases/download/v{{ $lazygitVersion }}/lazygit_{{ $lazygitVersion }}_Linux_x86_64.tar.gz"
   path = "lazygit"
 
-
+{{ $skmVersion := "0.8.6"}}
 [".local/bin/skm"]
   type = "archive-file"
-  url = "https://github.com/TimothyYe/skm/releases/latest/download/skm_0.8.6_Linux_i386.tar.gz"
+  url = "https://github.com/TimothyYe/skm/releases/download/v{{ $skmVersion }}/skm_{{ $skmVersion }}_Linux_x86_64.tar.gz"
   path = "skm"

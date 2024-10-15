@@ -144,7 +144,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-source_if_exists $DOTFILES/zsh/aliases.zsh
+source_if_exists ~/aliases.zsh
 
 
 

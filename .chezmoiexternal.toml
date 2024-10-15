@@ -1,0 +1,5 @@
+{{ $lazigitVersion := "0.44.1"}}
+[".local/bin/lazygit"]
+  type = "archive-file"
+  url = "https://github.com/jesseduffield/lazygit/releases/download/v0.44.1/lazygit_0.44.1_Linux_x86_64.tar.gz"
+  path = "lazygit"

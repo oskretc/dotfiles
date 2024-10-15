@@ -1,1 +1,4 @@
-# dotfiles
+# Dotfiles
+
+
+using chezmoi

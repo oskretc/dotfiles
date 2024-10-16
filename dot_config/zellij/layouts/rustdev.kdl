@@ -7,8 +7,8 @@ layout {
         pane edit="Cargo.toml"
     }
     pane split_direction="vertical" size="40%" {
-        pane command="cargo" {
-            args "run"
+        pane command="find src/ | entr -s 'cargo run'" {
+            // args "run"
             focus true
         }
         pane command="cargo" {

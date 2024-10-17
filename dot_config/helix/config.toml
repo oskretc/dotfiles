@@ -2,7 +2,7 @@ theme = "dracula_at_night"
 
 [editor]
 true-color = true
-bufferline = "always"
+bufferline = 'always'
 
 
 [keys.normal.C-y]

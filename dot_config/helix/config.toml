@@ -4,6 +4,10 @@ theme = "dracula_at_night"
 true-color = true
 bufferline = "always"
 
+[editor.indent-guides]
+render = true 
+character = "⸽"
+skip-levels = 1
 
 [keys.normal.C-y]
 

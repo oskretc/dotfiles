@@ -8,11 +8,11 @@ layout {
     }
     pane split_direction="vertical" size="40%" {
         pane command="find" {
-            args "src/ | entr -s 'cargo run'"
+            args "src | entr -s 'cargo run'"
             focus true
         }
         pane command="find" {
-            args "src/ | entr -s 'cargo test'"
+            args "src | entr -s 'cargo test'"
         }
     }
     pane size=2 borderless=true {

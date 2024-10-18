@@ -19,3 +19,4 @@ layout {
         plugin location="zellij:status-bar"
     }
 }
+

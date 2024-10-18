@@ -7,12 +7,12 @@ layout {
         pane edit="Cargo.toml"
     }
     pane split_direction="vertical" size="40%" {
-        pane command="cargorun.sh" {
-            // args  "src | entr -s 'cargo run'"
+        pane command="cargo" {
+            args  "run"
             focus true
         }
-        pane command="cargotest.sh" {
-            // args "src | entr -s 'cargo test'"
+        pane command="cargo" {
+            args "test"
         }
     }
     pane size=2 borderless=true {

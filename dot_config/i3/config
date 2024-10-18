@@ -55,7 +55,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 
 # snapshot with mouse
-bindsym $mod+Shift+s exec "scroot --select"
+bindsym $mod+Shift+s exec "scroot"
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -11,8 +11,8 @@ layout {
             // args "run"
             focus true
         }
-        pane command="cargo" {
-            args "test"
+        pane command="find src/ | entr -s 'cargo test'" {
+            // args "test"
         }
     }
     pane size=2 borderless=true {

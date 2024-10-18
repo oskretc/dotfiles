@@ -4,25 +4,18 @@ keybinds {
         
         unbind "Ctrl g"
         bind "F1" { SwitchToMode "Locked"; }
-        
         unbind "Ctrl p"
         bind "F2" { SwitchToMode "Pane"; }
-        
         unbind "Ctrl t"
         bind "F3" { SwitchToMode "Tab"; }
-        
         unbind "Ctrl n"
         bind "F4" { SwitchToMode "Resize"; }
-        
         unbind "Ctrl h"
         bind "F5" { SwitchToMode "Move"; }
-        
         unbind "Ctrl s"
         bind "F6" { SwitchToMode "Scroll"; }
-        
         unbind "Ctrl o"
         bind "F7" { SwitchToMode "Session"; }
-        
         unbind "Ctrl q"
         bind "F10" { Quit; }
         
@@ -32,9 +25,29 @@ keybinds {
     locked {
         // bind "Ctrl g" { SwitchToMode "Normal"; }
 
+        unbind "Ctrl g"
         bind "F1" { SwitchToMode "Normal"; }
+        
     }
     resize {
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        bind "F2" { SwitchToMode "Pane"; }
+        unbind "Ctrl t"
+        bind "F3" { SwitchToMode "Tab"; }
+        unbind "Ctrl n"
+        unbind "Ctrl h"
+        bind "F5" { SwitchToMode "Move"; }
+        unbind "Ctrl s"
+        bind "F6" { SwitchToMode "Scroll"; }
+        unbind "Ctrl o"
+        bind "F7" { SwitchToMode "Session"; }
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+
+        
         bind "F4" { SwitchToMode "Normal"; }
         bind "h" "Left" { Resize "Increase Left"; }
         bind "j" "Down" { Resize "Increase Down"; }
@@ -48,6 +61,23 @@ keybinds {
         bind "-" { Resize "Decrease"; }
     }
     pane {
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        unbind "Ctrl t"
+        bind "F3" { SwitchToMode "Tab"; }
+        unbind "Ctrl n"
+        bind "F4" { SwitchToMode "Resize"; }
+        unbind "Ctrl h"
+        bind "F5" { SwitchToMode "Move"; }
+        unbind "Ctrl s"
+        bind "F6" { SwitchToMode "Scroll"; }
+        unbind "Ctrl o"
+        bind "F7" { SwitchToMode "Session"; }
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+        
         bind "F2" { SwitchToMode "Normal"; }
         bind "h" "Left" { MoveFocus "Left"; }
         bind "l" "Right" { MoveFocus "Right"; }
@@ -65,6 +95,24 @@ keybinds {
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
     move {
+
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        bind "F2" { SwitchToMode "Pane"; }
+        unbind "Ctrl t"
+        bind "F3" { SwitchToMode "Tab"; }
+        unbind "Ctrl n"
+        bind "F4" { SwitchToMode "Resize"; }
+        unbind "Ctrl h"
+        unbind "Ctrl s"
+        bind "F6" { SwitchToMode "Scroll"; }
+        unbind "Ctrl o"
+        bind "F7" { SwitchToMode "Session"; }
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+        
         bind "F5" { SwitchToMode "Normal"; }
         bind "n" "Tab" { MovePane; }
         bind "p" { MovePaneBackwards; }
@@ -74,6 +122,24 @@ keybinds {
         bind "l" "Right" { MovePane "Right"; }
     }
     tab {
+
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        bind "F2" { SwitchToMode "Pane"; }
+        unbind "Ctrl t"
+        unbind "Ctrl n"
+        bind "F4" { SwitchToMode "Resize"; }
+        unbind "Ctrl h"
+        bind "F5" { SwitchToMode "Move"; }
+        unbind "Ctrl s"
+        bind "F6" { SwitchToMode "Scroll"; }
+        unbind "Ctrl o"
+        bind "F7" { SwitchToMode "Session"; }
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+        
         bind "F3" { SwitchToMode "Normal"; }
         bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "h" "Left" "Up" "k" { GoToPreviousTab; }
@@ -96,6 +162,24 @@ keybinds {
         bind "Tab" { ToggleTab; }
     }
     scroll {
+
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        bind "F2" { SwitchToMode "Pane"; }
+        unbind "Ctrl t"
+        bind "F3" { SwitchToMode "Tab"; }
+        unbind "Ctrl n"
+        bind "F4" { SwitchToMode "Resize"; }
+        unbind "Ctrl h"
+        bind "F5" { SwitchToMode "Move"; }
+        unbind "Ctrl s"
+        unbind "Ctrl o"
+        bind "F7" { SwitchToMode "Session"; }
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+        
         bind "F6" { SwitchToMode "Normal"; }
         bind "e" { EditScrollback; SwitchToMode "Normal"; }
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
@@ -110,6 +194,24 @@ keybinds {
         // bind "Alt c" { Copy; }
     }
     search {
+
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        bind "F2" { SwitchToMode "Pane"; }
+        unbind "Ctrl t"
+        bind "F3" { SwitchToMode "Tab"; }
+        unbind "Ctrl n"
+        bind "F4" { SwitchToMode "Resize"; }
+        unbind "Ctrl h"
+        bind "F5" { SwitchToMode "Move"; }
+        unbind "Ctrl s"
+        unbind "Ctrl o"
+        bind "F7" { SwitchToMode "Session"; }
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+        
         bind "F6" { SwitchToMode "Normal"; }
         bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
@@ -137,6 +239,24 @@ keybinds {
         bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
     }
     session {
+
+
+        unbind "Ctrl g"
+        bind "F1" { SwitchToMode "Locked"; }
+        unbind "Ctrl p"
+        bind "F2" { SwitchToMode "Pane"; }
+        unbind "Ctrl t"
+        bind "F3" { SwitchToMode "Tab"; }
+        unbind "Ctrl n"
+        bind "F4" { SwitchToMode "Resize"; }
+        unbind "Ctrl h"
+        bind "F5" { SwitchToMode "Move"; }
+        unbind "Ctrl s"
+        bind "F6" { SwitchToMode "Scroll"; }
+        unbind "Ctrl o"
+        unbind "Ctrl q"
+        bind "F10" { Quit; }
+        
         bind "F7" { SwitchToMode "Normal"; }
         bind "Ctrl s" { SwitchToMode "Scroll"; }
         bind "d" { Detach; }

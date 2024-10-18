@@ -1,4 +1,4 @@
-theme = "dracula_at_night"
+theme = "monokai_aqua"
 
 [editor]
 true-color = true

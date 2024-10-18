@@ -20,4 +20,4 @@ h = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.conf
 
 [keys.normal]
 
-C-g = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash lazygit ."
+C-l = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash lazygit ."

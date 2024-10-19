@@ -235,3 +235,11 @@ source_if_exists ~/.cargo/env
 
 
 eval "$(zellij setup --generate-auto-start zsh )" 
+
+# pnpm
+export PNPM_HOME="/home/oscar/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

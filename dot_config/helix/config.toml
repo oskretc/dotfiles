@@ -23,6 +23,7 @@ h = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.conf
 C-l = ":sh zellij run -c -f --width 80% --height 80% -- lazygit"
 C-s = [":write"]
 C-b = ["save_selection"]
+C-tab = ":bn"
 
 [keys.insert]
  C-s = ["normal_mode", ":write"]

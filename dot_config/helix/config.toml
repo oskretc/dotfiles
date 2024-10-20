@@ -24,6 +24,7 @@ C-l = ":sh zellij run -c -f --width 80% --height 80% -- lazygit"
 C-s = [":write"]
 C-b = ["save_selection"]
 C-tab = ":bn"
+ret = ["insert_mode","insert_newline"]
 
 [keys.insert]
  C-s = ["normal_mode", ":write"]

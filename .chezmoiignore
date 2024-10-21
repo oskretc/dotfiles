@@ -2,6 +2,6 @@
 
 
  # Ignore non-Windows files.
-{{ if ne .chezmoi.os "windows" -}}
-dot_config/AppData
+{{- if ne .chezmoi.os "windows" -}}
+AppData*
 {{- end }}

@@ -4,5 +4,5 @@ README.md
 # Ignore non-Windows files
 # {{- if ne .chezmoi.os "windows" -}}
 AppData/
-dot_glzr/
+dot_glzr/*
 # {{- end }}

@@ -3,13 +3,18 @@
 README.md
 # Ignore non-Windows files
 {{- if ne .chezmoi.os "windows" -}}
-AppData*
+AppData/Local/Microsoft/PowerToys*
 .glzr*
 {{- end }}
 
 {{- if ne .chezmoi.os "linux" -}}
 
-.config*
+.config/helix*
+.config/i3*
+.config/i3status*
+.config/lazygit*
+.config/yazi*
+.config/zellij*
 .zshrc
 aliases.zsh
 

@@ -42,3 +42,4 @@ alias cua="chezmoi update -a"
 
 alias rustdev="zellij action new-tab --layout rustdev"
 
+alias lg="lazygit"

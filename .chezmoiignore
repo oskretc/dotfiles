@@ -4,5 +4,6 @@ README.md
 # Ignore non-Windows files
 # {{- if ne .chezmoi.os "windows" -}}
 AppData/
-dot_glzr/*
+dot_glzr/glazewm/*
+dot_glzr/zebar/config.yaml
 # {{- end }}

@@ -3,7 +3,8 @@
 README.md
 # Ignore non-Windows files
 {{ if ne .chezmoi.os "windows" }}
-AppData/Local/Microsoft/PowerToys*
+
+AppData*
 .glzr*
 {{ end }}
 

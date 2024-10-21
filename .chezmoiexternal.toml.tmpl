@@ -1,3 +1,7 @@
+
+ 
+{{ if ne .chezmoi.os "windows" }}
+
 {{ $lazygitVersion := "0.44.1"}}
 [".local/bin/lazygit"]
   type = "archive-file"
@@ -9,3 +13,5 @@
   type = "archive-file"
   url = "https://github.com/TimothyYe/skm/releases/download/v{{ $skmVersion }}/skm_{{ $skmVersion }}_Linux_x86_64.tar.gz"
   path = "skm"
+
+ {{ end }}

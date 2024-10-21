@@ -1,7 +1,7 @@
 
 
-
- # Ignore non-Windows files.
+README.md
+ # Ignore non-Windows files
 {{- if ne .chezmoi.os "windows" -}}
 AppData*
 {{- end }}

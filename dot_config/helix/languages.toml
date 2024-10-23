@@ -23,3 +23,15 @@ LOG_FILE = "/tmp/completion.log"
 [[language]]
 name = "rust"
 language-servers = [ "scls", "rust-analyzer" ]
+
+
+[[language]]
+name = "php"
+scope = "source.php"
+injection-regex = "php"
+file-types = ["php", "inc", "php4", "php5", "phtml", "ctp"]
+shebangs = ["php"]
+roots = ["composer.json", "index.php"]
+comment-token = "//"
+language-servers = [ "intelephense" ]
+indent = { tab-width = 4, unit = "    " }

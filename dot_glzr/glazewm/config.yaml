@@ -110,7 +110,8 @@ window_rules:
       - window_process: { equals: 'mstsc.exe' }
       - window_process: { equals: 'mstsc' }
 
-      
+      # ignore tortoise
+      - window_process: {equals: 'TortoiseProc.exe'}
       
 
       # Ignores picture-in-picture windows for browsers.

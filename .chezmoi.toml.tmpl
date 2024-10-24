@@ -1,6 +1,10 @@
 [git]
     autoCommit = true
     autoPush = true
+
+{{ if ne .chezmoi.os "windows" }}    
 [edit]
     command = "code"
     args = ["--wait"]
+
+ {{ end }}

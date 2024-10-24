@@ -8,7 +8,7 @@
   "transparent": true,
   "defaultPlacements": [
     {
-      "anchor": "top_left",
+      "anchor": "bottom_left",
       "offsetX": "0px",
       "offsetY": "0px",
       "width": "100%",

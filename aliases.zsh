@@ -44,5 +44,5 @@ alias rustdev="zellij action new-tab --layout rustdev"
 
 alias lg="lazygit"
 
-svn svnu="svn update --username osto --password $SVNPASS"
-svn svnst="svn status --username osto --password $SVNPASS"
+alias svnu="svn update --username osto --password $SVNPASS"
+alias svnst="svn status --username osto --password $SVNPASS"

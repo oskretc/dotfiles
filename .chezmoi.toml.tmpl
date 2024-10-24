@@ -2,7 +2,7 @@
     autoCommit = true
     autoPush = true
 
-{{ if ne .chezmoi.os "windows" }}    
+{{ if eq .chezmoi.os "windows" }}    
 [edit]
     command = "code"
     args = ["--wait"]

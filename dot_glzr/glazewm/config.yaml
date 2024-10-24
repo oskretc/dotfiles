@@ -112,6 +112,9 @@ window_rules:
 
       # ignore tortoise
       - window_process: {equals: 'TortoiseProc.exe'}
+
+      #ignore winmerge
+      - window_class: {equals: 'WinMergeWindowClassW'}
       
 
       # Ignores picture-in-picture windows for browsers.

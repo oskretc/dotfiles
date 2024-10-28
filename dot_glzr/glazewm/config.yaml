@@ -115,6 +115,9 @@ window_rules:
 
       #ignore winmerge
       - window_class: {equals: 'WinMergeWindowClassW'}
+
+      #ignore labview
+      - window_class: {equals: 'LVDChild'}
       
 
       # Ignores picture-in-picture windows for browsers.

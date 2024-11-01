@@ -30,6 +30,7 @@ alias commitandpush='gaa; gcmsg "simple change"; gp'
 # alias fd='fdfind'
 
 
+
 # ---- Eza (better ls) -----
 
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --oneline --git-repos"

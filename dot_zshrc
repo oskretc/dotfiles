@@ -154,8 +154,9 @@ eval "$(atuin init zsh)"
 
 
 # set up fzf key bindings
-source_if_exists /usr/share/doc/fzf/examples/key-bindings.zsh
-source_if_exists /usr/share/doc/fzf/examples/completion.zsh
+# source_if_exists /usr/share/doc/fzf/examples/key-bindings.zsh
+# source_if_exists /usr/share/doc/fzf/examples/completion.zsh
+source <(fzf --zsh)
 
 # Remove because it conflicts with fzf-tab
 # source_if_exists ~/fzf-git.sh/fzf-git.sh

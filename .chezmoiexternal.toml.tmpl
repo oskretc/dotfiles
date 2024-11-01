@@ -14,4 +14,13 @@
   url = "https://github.com/TimothyYe/skm/releases/download/v{{ $skmVersion }}/skm_{{ $skmVersion }}_Linux_x86_64.tar.gz"
   path = "skm"
 
+
+{{ $fzfVersion := "0.56.0"}}
+[".local/bin/fzf"]
+  type = "archive-file"
+  url = "https://github.com/junegunn/fzf/releases/download/v{{ $fzfVersion }}/fzf-{{ $fzfVersion }}-linux_amd64.tar.gz"
+  path = "fzf"
+
  {{ end }}
+
+

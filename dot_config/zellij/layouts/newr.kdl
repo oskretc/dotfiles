@@ -1,6 +1,6 @@
 layout {
     pane size=1 borderless=true {
-        plugin location="zellij:tab-bar"
+        plugin location="tab-bar"
     }
     pane split_direction="vertical" size="70%" {
         pane edit="src/main.rs"
@@ -10,8 +10,8 @@ layout {
         pane 
     }
     
-    pane size=2 borderless=true {
-        plugin location="zellij:status-bar"
+    pane size=1 borderless=true {
+        plugin location="status-bar"
     }
 }
 

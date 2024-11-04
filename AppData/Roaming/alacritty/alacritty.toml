@@ -16,3 +16,7 @@ transparent_background_colors = true
 decorations = "None"
 padding = {x=3, y=10}
 opacity = 0.95
+
+[shell]
+program = "cmd"
+

@@ -33,7 +33,7 @@ alias commitandpush='gaa; gcmsg "simple change"; gp'
 
 # ---- Eza (better ls) -----
 
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --oneline --git-repos"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time  --oneline --git-repos"
 
 alias cd="z"
 

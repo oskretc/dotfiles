@@ -1,4 +1,5 @@
-theme = "monokai_aqua"
+# theme = "monokai_aqua"
+theme = "ttox"
 
 [editor]
 true-color = true

@@ -1,0 +1,18 @@
+import = [
+    "c:\\users\\osto\\.config\\alacritty\\themes\\themes\\deepspace.toml",
+]
+
+[font]
+normal = { family = "Hack Nerd Font"}
+size = 12
+
+[colors]
+
+# Transparent background colors
+transparent_background_colors = true
+
+[window]
+
+decorations = "None"
+padding = {x=3, y=10}
+opacity = 0.95

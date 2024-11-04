@@ -27,6 +27,10 @@ keybinds {
 
         unbind "Ctrl g"
         bind "F1" { SwitchToMode "Normal"; }
+        bind "Ctrl Down" { MoveFocus "Down"; }
+        bind "Ctrl Up" { MoveFocus "Up"; }
+        bind "Ctrl Left" { MoveFocus "Left"; }
+        bind "Ctrl Right" { MoveFocus "Right"; }
         
     }
     resize {

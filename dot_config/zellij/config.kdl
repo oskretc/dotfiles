@@ -569,8 +569,11 @@ default_mode "locked"
 // Default: false
 //
 // disable_session_metadata true
+pane_frames false
+
 ui {
     pane_frames {
         hide_session_name true
+        rounded_corners true
     }
 }

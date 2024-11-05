@@ -4,11 +4,13 @@ theme = "dark_plus_oscar"
 [editor]
 true-color = true
 bufferline = "always"
+line-number = "relative"
 
 [editor.indent-guides]
 render = true 
 character = "⸽"
 skip-levels = 1
+
 
 # [keys.normal]
 

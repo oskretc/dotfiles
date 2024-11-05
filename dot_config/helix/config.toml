@@ -10,10 +10,10 @@ render = true
 character = "⸽"
 skip-levels = 1
 
-[keys.normal]
+# [keys.normal]
 
 # Open the file(s) in the current window
-C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
+# C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
 # Open the file(s) in a vertical pane
 # v = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh vsplit"
 # Open the file(s) in a horizontal pane
@@ -21,6 +21,7 @@ C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.co
 
 [keys.normal]
 
+C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
 C-l = ":sh zellij run -c -f --width 80% --height 80% -- lazygit"
 C-s = [":write"]
 C-b = ["save_selection"]

@@ -27,6 +27,11 @@
   url = "https://github.com/zellij-org/zellij/releases/download/v{{ $zellijVersion }}/zellij-x86_64-unknown-linux-musl.tar.gz"
   path = "zellij"
 
+{{ $fdVersion := "10.2.0"}}
+[".local/bin/fd"]
+  type = "archive-file"
+  url = "https://github.com/sharkdp/fd/releases/download/v{{ $fdVersion }}/fd-v{{ $fdVersion }}-x86_64-unknown-linux-gnu.tar.gz"
+  path = "fd-v{{ $fdVersion }}-x86_64-unknown-linux-gnu/fd"
 
 
 {{ end }}

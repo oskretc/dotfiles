@@ -17,7 +17,7 @@ fzf --ansi  --disabled --query "$INITIAL_QUERY" \
     --delimiter : \
     --header 'CTRL-T: Switch between ripgrep/fzf' \
     --preview 'bat --color=always {1} --highlight-line {2}' \
-    --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+    --preview-window 'up,50%,border-bottom,+{2}+3/3,~3' \
     --bind 'enter:become(echo {1})'    
 }
 paths=$(rfvh | while read -r; do printf "%q " "$REPLY"; done)

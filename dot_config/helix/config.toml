@@ -6,6 +6,11 @@ true-color = true
 bufferline = "always"
 line-number = "relative"
 
+[editor.soft-wrap]
+enable = true
+
+
+
 [editor.indent-guides]
 render = true 
 character = "⸽"

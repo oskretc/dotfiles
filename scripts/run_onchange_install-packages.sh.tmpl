@@ -10,26 +10,12 @@ sudo apt install -y unzip
 
 sudo apt install -y restic
 
-sudo apt install -y bat
 
 sudo apt install -y entr
 
 sudo apt install -y ripgrep
 
 
-
-if [ ! -L ~/.local/bin/fd ]; then
-  echo "creating fd link"
-  ln -s $(which fdfind) ~/.local/bin/fd
-else
-  echo "fd already linked"
-fi
-if [ ! -L ~/.local/bin/bat ]; then
-  echo "creating bat link"
-  ln -s $(which batcat) ~/.local/bin/bat
-else 
-  echo "bat already link"
-fi
 
 
 

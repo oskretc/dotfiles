@@ -2,3 +2,5 @@
 
 
 using chezmoi
+
+windows and linux

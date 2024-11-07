@@ -1,1 +1,1 @@
-eza --color=always --long --git --no-filesize --icons=always --no-time  --oneline --git-repos
+eza --color=always --long --git  --icons=always --no-time  --oneline --git-repos

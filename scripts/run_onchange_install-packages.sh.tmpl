@@ -124,3 +124,15 @@ fi
 
 
 {{ end -}}
+
+{{ if eq .chezmoi.os "windows" -}}
+
+sudo choco install -y helix
+sudo choco install -y fzf
+sudo choco install -y bat
+sudo choco install -y ripgrep
+
+
+
+
+{{ end -}}

@@ -6,6 +6,8 @@ README.md
 
 AppData*
 .glzr*
+.local/bin/*.bat
+
 {{ end }}
 
 {{ if ne .chezmoi.os "linux" }}

@@ -28,5 +28,6 @@ ret = ["insert_mode","insert_newline"]
 
 [keys.insert]
  C-s = ["normal_mode", ":write"]
+ 
 
 

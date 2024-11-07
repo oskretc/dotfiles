@@ -2,10 +2,10 @@
 
 {{ if eq .chezmoi.os "windows" -}}
 
-choco install -y helix
-choco install -y fzf
-choco install -y bat
-choco install -y ripgrep
+sudo choco install -y helix
+sudo choco install -y fzf
+sudo choco install -y bat
+sudo choco install -y ripgrep
 
 winget install eza-community.eza
 

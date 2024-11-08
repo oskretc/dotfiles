@@ -1,0 +1,28 @@
+version = '0.21.9'
+
+local home = os.getenv("HOME")
+package.path = home
+.. "/.config/xplr/plugins/?/init.lua;"
+.. home
+.. "/.config/xplr/plugins/?.lua;"
+.. package.path
+
+require("tri-pane").setup({
+  layout_key = "T", -- In switch_layout mode
+  as_default_layout = false,
+  left_pane_width = { Percentage = 20 },
+  middle_pane_width = { Percentage = 50 },
+  right_pane_width = { Percentage = 30 },
+  left_pane_renderer = custom_function_to_render_left_pane,
+  right_pane_renderer = custom_function_to_render_right_pane
+})
+
+
+require("fzf").setup{
+  mode = "default",
+  key = "ctrl-f",
+  bin = "fzf",
+  args = "--preview 'pistol {}'",
+  recursive = false,  -- If true, search all files under $PWD
+  enter_dir = false,  -- Enter if the result is directory
+}

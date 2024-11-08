@@ -1,1 +1,47 @@
-{{- template "helix/config.toml" . -}}
+# theme = "monokai_aqua"
+theme = "dark_plus_oscar"
+
+[editor]
+true-color = true
+bufferline = "always"
+line-number = "relative"
+
+[editor.soft-wrap]
+enable = true
+
+
+
+[editor.indent-guides]
+render = true 
+character = "⸽"
+skip-levels = 1
+
+
+# [keys.normal]
+
+# Open the file(s) in the current window
+# C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
+# Open the file(s) in a vertical pane
+# v = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh vsplit"
+# Open the file(s) in a horizontal pane
+# h = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh hsplit"
+
+[keys.normal]
+
+C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
+C-k = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/rfvh open"
+C-l = ":sh zellij run -c -f --width 80% --height 80% -- lazygit"
+C-s = [":write"]
+C-b = ["save_selection"]
+C-q = ":bc"
+# C-tab = ":bn"
+ret = ["insert_mode","insert_newline"]
+
+
+S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.insert]
+ C-s = ["normal_mode", ":write"]
+
+

@@ -33,8 +33,8 @@ C-k = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.co
 C-l = ":sh zellij run -c -f --width 80% --height 80% -- lazygit"
 C-s = [":write"]
 C-b = ["save_selection"]
-C-q = ":bn"
-# C-tab = ":bn"
+C-q = ":q"
+C-tab = ":bn"
 ret = ["insert_mode","insert_newline"]
 
 
@@ -47,3 +47,7 @@ S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befo
 
 [keys.normal.b]
 c = ":bc"
+
+[keys.normal.space]
+q = [":bp"]
+e = [":bn"]

@@ -2,6 +2,11 @@
     autoCommit = true
     autoPush = true
 
+encryption = "gpg"
+[gpg]
+    symmetric = true
+
+
 {{ if eq .chezmoi.os "windows" }}    
 [edit]
     command = "hx"

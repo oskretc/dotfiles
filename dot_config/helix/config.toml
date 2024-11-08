@@ -36,6 +36,10 @@ C-b = ["save_selection"]
 C-q = ":bn"
 ret = ["insert_mode","insert_newline"]
 
+
+S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
 [keys.insert]
  C-s = ["normal_mode", ":write"]
 

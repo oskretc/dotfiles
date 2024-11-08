@@ -45,3 +45,5 @@ S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befo
  C-s = ["normal_mode", ":write"]
 
 
+[keys.normal.b]
+c = ":bc"

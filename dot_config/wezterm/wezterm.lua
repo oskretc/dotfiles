@@ -40,5 +40,14 @@ config.skip_close_confirmation_for_processes_named = {
   'powershell.exe',
 }
 
+
+config.keys = {
+  {
+    key = '9',
+    mods = 'ALT',
+    action = wezterm.action.ShowLauncherArgs { flags = 'FUZZY|TABS' },
+  },
+  { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
+}
 -- and finally, return the configuration to wezterm
 return config

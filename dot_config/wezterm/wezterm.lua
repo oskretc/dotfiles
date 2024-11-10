@@ -20,6 +20,10 @@ config.window_background_opacity = 0.5
 
 -- config.text_background_opacity = 0.5
 
+config.command_palette_font_size = 12.0
+config.command_palette_bg_color = "#1f1f1f"
+
+config.command_palette_rows = 10
 config.window_decorations = "NONE"
 
 

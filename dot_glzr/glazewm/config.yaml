@@ -255,7 +255,7 @@ keybindings:
   # Terminal and Git Bash respectively.
   # WIN original was alt+enter, changed to alt+c but using win+enter
   # - commands: ['shell-exec C:\Program Files\Alacritty\alacritty.exe']
-  - commands: ['shell-exec wt']
+  - commands: ['shell-exec wezterm-gui']
     bindings: ['alt+c']
   # Focus the next/previous workspace defined in `workspaces` config.
   - commands: ['focus --next-workspace']

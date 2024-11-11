@@ -18,6 +18,13 @@ config.hide_tab_bar_if_only_one_tab = true
 
 config.window_background_opacity = 0.5
 
+
+if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
+
+config.window_background_opacity = 0.8
+end
+
+
 -- config.text_background_opacity = 0.5
 
 config.command_palette_font_size = 12.0

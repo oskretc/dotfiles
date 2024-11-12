@@ -43,7 +43,7 @@ alias fuzz="rg . | fzf "
 
 # alias wezterm='flatpak run org.wezfurlong.wezterm'
 alias cz="chezmoi edit"
-alias cua="chezmoi update -a --skip-encrypted"
+alias cua="chezmoi update -a -x=encrypted"
 
 alias rustdev="zellij action new-tab --layout newr"
 

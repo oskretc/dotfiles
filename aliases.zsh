@@ -51,3 +51,4 @@ alias lg="lazygit"
 
 alias svnu="svn update --username osto --password $SVNPASS"
 alias svnst="svn status --username osto --password $SVNPASS"
+alias svndiff="svn diff --diff-cmd colordiff `fzf` | delta"

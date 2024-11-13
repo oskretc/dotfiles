@@ -1,10 +1,10 @@
-[git]
-    autoCommit = true
-    autoPush = true
-[chezmoi]
 encryption = "gpg"
 [gpg]
     symmetric = true
+
+[git]
+    autoCommit = true
+    autoPush = true
 
 
 {{ if eq .chezmoi.os "windows" }}    

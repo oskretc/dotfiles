@@ -1,3 +1,3 @@
 @echo off
-chezmoi update --apply
+chezmoi update --apply -x=encrypted
 

@@ -33,8 +33,11 @@ config.window_background_image_hsb = {
 
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  config.window_background_opacity = 0.8
   config.default_domain = 'WSL:Ubuntu'
+  -- config.window_background_opacity = 0.8
+  
+  config.window_background_image = 'c:/users/osto/.config/wezterm/bg.jpg'
+  -- config.window_background_image = '%userprofile%/.config/wezterm/bg.jpg'
 end
 
 

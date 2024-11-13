@@ -18,7 +18,18 @@ config.disable_default_key_bindings = false
 config.font = wezterm.font 'Hack Nerd Font'
 
 config.hide_tab_bar_if_only_one_tab = true
-config.window_background_opacity = 0.5
+
+-- config.window_background_image = '/home/oscar/.config/wezterm/bg.jpg'
+config.window_background_image = '.config/wezterm/bg.jpg'
+
+config.window_background_image_hsb = {
+  brightness = 0.005,
+
+  hue = 0.8,
+
+  saturation = 0.8,
+}
+-- config.window_background_opacity = 0.5
 
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then

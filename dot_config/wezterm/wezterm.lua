@@ -62,6 +62,7 @@ config.keys = {
 
 -- ==================== Backgroud stuff ==========================
 local dimmer = { brightness = 0.02, hue = 1.0, saturation = 0.5 }
+local dimmer2 = { brightness = 0.03, hue = 1.0, saturation = 1.0 }
 
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
@@ -92,7 +93,7 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
       -- two screens.
       vertical_align = 'Bottom',
       repeat_y_size = '100%',
-      hsb = dimmer,
+      hsb = dimmer2,
 
       -- The parallax factor is higher than the background layer, so this
       -- one will appear to be closer when we scroll
@@ -122,11 +123,11 @@ else
       -- two screens.
       vertical_align = 'Bottom',
       repeat_y_size = '100%',
-      hsb = dimmer,
+      hsb = dimmer2,
 
       -- The parallax factor is higher than the background layer, so this
       -- one will appear to be closer when we scroll
-      attachment = { Parallax = 0.2 },     
+      attachment = { Parallax = 0.05 },     
     }
   }
 

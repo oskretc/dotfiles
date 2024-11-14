@@ -391,3 +391,8 @@ assign [class="org.wezfurlong.wezterm"] → $ws5
 bindsym $mod+Shift+f move workspace to output right
 bindsym $mod+Shift+a move workspace to output left
 bindsym $mod+d exec --no-startup-id i3-msg workspace back_and_forth
+
+# conflict with other bindings
+# bindsym $mod+a exec --no-startup-id i3-msg workspace prev
+# bindsym $mod+s exec --no-startup-id i3-msg workspace next
+

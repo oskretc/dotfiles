@@ -382,7 +382,12 @@ mode "$mode_gaps_left" {
         bindsym Escape mode "default"
 }
 
-
+# default location for common apps
 assign [class="Google-chrome" instance="google-chrome"] → $ws2
 assign [class="Google-chrome" instance="crx_jjplkgmcmjkpnnhppilaoadooeoieplc"] → $ws1
 assign [class="org.wezfurlong.wezterm"] → $ws5
+
+# move workspaces left ot right
+bindsym $mod+Shift+f move workspace to output right
+bindsym $mod+Shift+a move workspace to output left
+bindsym $mod+d exec --no-startup-id i3-msg workspace back_and_forth

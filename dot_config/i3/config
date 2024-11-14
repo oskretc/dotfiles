@@ -381,3 +381,8 @@ mode "$mode_gaps_left" {
         bindsym Return mode "$mode_gaps"
         bindsym Escape mode "default"
 }
+
+
+assign [class="Google-chrome" instance="google-chrome"] → $ws2
+assign [class="Google-chrome" instance="crx_jjplkgmcmjkpnnhppilaoadooeoieplc"] → $ws1
+assign [class="org.wezfurlong.wezterm"] → $ws5

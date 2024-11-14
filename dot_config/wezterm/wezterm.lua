@@ -71,12 +71,62 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
       hsb = dimmer
     }
   }
+
+  config.background = {
+    {
+
+      source = { File = 'c:/users/osto/.config/wezterm/bg.jpg'},
+      repeat_x = 'Mirror',
+      hsb = dimmer,
+      -- When the viewport scrolls, move this layer 10% of the number of
+      -- pixels moved by the main viewport. This makes it appear to be
+      -- further behind the text.
+      -- attachment = { Parallax = 0.1 },    
+    },
+    {
+      source = { File = 'c:/users/osto/.config/wezterm/over.jpg'},
+      width = '100%',
+      repeat_x = 'NoRepeat',
+
+      -- position the spins starting at the bottom, and repeating every
+      -- two screens.
+      vertical_align = 'Bottom',
+      repeat_y_size = '100%',
+      hsb = dimmer,
+
+      -- The parallax factor is higher than the background layer, so this
+      -- one will appear to be closer when we scroll
+      attachment = { Parallax = 0.2 },     
+    }
+  }
+  
 else 
   
   config.background = {
     {
       source = { File = '.config/wezterm/bg.jpg'},
-      hsb = dimmer
+
+      repeat_x = 'Mirror',
+      hsb = dimmer,
+      -- When the viewport scrolls, move this layer 10% of the number of
+      -- pixels moved by the main viewport. This makes it appear to be
+      -- further behind the text.
+      -- attachment = { Parallax = 0.1 },    
+    },
+    {
+      source = { File = '.config/wezterm/over.png'},
+      width = '100%',
+      repeat_x = 'NoRepeat',
+
+      -- position the spins starting at the bottom, and repeating every
+      -- two screens.
+      vertical_align = 'Bottom',
+      repeat_y_size = '100%',
+      hsb = dimmer,
+
+      -- The parallax factor is higher than the background layer, so this
+      -- one will appear to be closer when we scroll
+      attachment = { Parallax = 0.2 },     
     }
   }
 

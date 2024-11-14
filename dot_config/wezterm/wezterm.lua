@@ -19,29 +19,12 @@ config.font = wezterm.font 'Hack Nerd Font'
 
 config.hide_tab_bar_if_only_one_tab = true
 
--- config.window_background_image = '/home/oscar/.config/wezterm/bg.jpg'
-config.window_background_image = '.config/wezterm/bg.jpg'
-
-config.window_background_image_hsb = {
-  brightness = 0.005,
-
-  hue = 0.8,
-
-  saturation = 0.8,
-}
--- config.window_background_opacity = 0.5
-
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   config.default_domain = 'WSL:Ubuntu'
-  -- config.window_background_opacity = 0.8
-  
-  config.window_background_image = 'c:/users/osto/.config/wezterm/bg.jpg'
-  -- config.window_background_image = '%userprofile%/.config/wezterm/bg.jpg'
 end
 
 
--- config.text_background_opacity = 0.5
 
 config.command_palette_font_size = 12.0
 config.command_palette_bg_color = "#1f1f1f"
@@ -72,5 +55,37 @@ config.keys = {
   },
   { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
 }
+
+
+
+
+
+-- ==================== Backgroud stuff ==========================
+local dimmer = { brightness = 0.02, hue = 1.0, saturation = 0.5 }
+
+
+if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
+  config.background = {
+    {
+      source = { File = 'c:/users/osto/.config/wezterm/bg.jpg'},
+      hsb = dimmer
+    }
+  }
+else 
+  
+  config.background = {
+    {
+      source = { File = '.config/wezterm/bg.jpg'},
+      hsb = dimmer
+    }
+  }
+
+end
+
+
+
+
 -- and finally, return the configuration to wezterm
 return config
+
+

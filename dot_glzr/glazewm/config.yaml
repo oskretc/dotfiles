@@ -147,6 +147,7 @@ binding_modes:
 
   # When enabled, all keybindings are disabled except for alt+shift+p which
   # returns to default keybindings.
+  # remmaped to win+shift+p   
   - name: 'pause'
     keybindings:
       - commands: ['wm-disable-binding-mode --name pause']
@@ -154,7 +155,7 @@ binding_modes:
 
 keybindings:
   # Shift focus in a given direction.
-  # remapped to win
+  # remapped to win+arrows
   - commands: ['focus --direction left']
     bindings: ['alt+h']
   - commands: ['focus --direction right']
@@ -177,7 +178,7 @@ keybindings:
 
 
   # Move focused window in a given direction.
-  # remapped to win
+  # remapped to win+arrows
   - commands: ['move --direction left']
     bindings: ['alt+shift+h']
   - commands: ['move --direction right']
@@ -205,7 +206,7 @@ keybindings:
     bindings: ['alt+r']
 
   # Disables all keybindings until alt+shift+p is pressed again.
-  # WIN
+  # win+shift+p
   - commands: ['wm-enable-binding-mode --name pause']
     bindings: ['alt+shift+p']
 
@@ -223,11 +224,12 @@ keybindings:
   #   bindings: ['alt+shift+space']
 
   # Change the focused window to be tiling.
+  # should remap to win+t
   - commands: ['toggle-tiling']
     bindings: ['alt+t']
 
   # Change the focused window to be fullscreen.
-  #remmaped to win
+  #remmaped to win+f
   - commands: ['toggle-fullscreen']
     bindings: ['alt+f']
 
@@ -236,14 +238,17 @@ keybindings:
     bindings: ['alt+m']
 
   # Close focused window.
+  # should remap to win+shift+q
   - commands: ['close']
     bindings: ['alt+shift+q']
 
   # Kill GlazeWM process safely.
+  # should remap to win+shift+e
   - commands: ['wm-exit']
     bindings: ['alt+shift+e']
 
   # Re-evaluate configuration file.
+  # should remap to win+shift+r
   - commands: ['wm-reload-config']
     bindings: ['alt+shift+r']
   # Redraw all windows.
@@ -258,12 +263,15 @@ keybindings:
   - commands: ['shell-exec wezterm-gui']
     bindings: ['alt+c']
   # Focus the next/previous workspace defined in `workspaces` config.
+  # win+s is search, should be fine to remap to win+s
   - commands: ['focus --next-workspace']
     bindings: ['alt+s']
+  # win+a is notification maybe
   - commands: ['focus --prev-workspace']
     bindings: ['alt+a']
-
+  
   # Focus the workspace that last had focus.
+  # win+d is show desktop, not really useful remap
   - commands: ['focus --recent-workspace']
     bindings: ['alt+d']
 

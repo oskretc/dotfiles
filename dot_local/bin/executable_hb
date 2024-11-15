@@ -1,10 +1,12 @@
 #!/bin/bash
+
+current_dir=$(pwd)
+# echo "The script is running from: $current_dir"
+
 zellij action new-tab 
 
-# zellij action go-to-tab-name DEVELOP
-# zellij run -c --cwd . -d right -- broot
 zellij action rename-tab DEVELOP
-zellij run -c --cwd . -- hx
+zellij run -c --cwd $current_dir  -- hx
 zellij action resize increase left
 zellij action resize increase left
 zellij action resize increase left
@@ -12,7 +14,13 @@ zellij action resize increase left
 zellij action resize increase left
 zellij action resize increase left
 zellij action rename-pane hx
-zellij action new-pane -d down
+zellij action new-pane --cwd "$current_dir" -d down 
+zellij action rename-pane terminal
+
+zellij action write-chars "cd $current_dir"
+zellij action write 13 # send <Enter> key
+zellij action write-chars "clear"
+zellij action write 13 # send <Enter> key
 zellij action resize increase down
 zellij action resize increase down
 zellij action resize increase down

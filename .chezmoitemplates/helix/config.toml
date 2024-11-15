@@ -2,6 +2,7 @@
 theme = "dark_plus_oscar"
 
 [editor]
+mouse = true
 true-color = true
 bufferline = "always"
 line-number = "relative"
@@ -53,3 +54,15 @@ S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befo
 "]" = [":bn"]
 [keys.normal."["]
 "[" = [":bp"]
+
+
+[keys.normal.";"]
+b = ":sh heliz-wezterm.sh blame"
+e = ":sh heliz-wezterm.sh explorer"
+f = ":sh heliz-wezterm.sh fzf"
+g = ":sh heliz-wezterm.sh lazygit"
+o = ":sh heliz-wezterm.sh open"
+r = ":sh heliz-wezterm.sh run"
+s = ":sh heliz-wezterm.sh test_single"
+t = ":sh heliz-wezterm.sh test_all"
+w = ":sh zelix.sh explorer"

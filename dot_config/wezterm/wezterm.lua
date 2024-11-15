@@ -66,12 +66,6 @@ local dimmer2 = { brightness = 0.03, hue = 1.0, saturation = 1.0 }
 
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
-  config.background = {
-    {
-      source = { File = 'c:/users/osto/.config/wezterm/bg.jpg'},
-      hsb = dimmer
-    }
-  }
 
   config.background = {
     {
@@ -85,7 +79,7 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
       -- attachment = { Parallax = 0.1 },    
     },
     {
-      source = { File = 'c:/users/osto/.config/wezterm/over.jpg'},
+      source = { File = 'c:/users/osto/.config/wezterm/over.png'},
       width = '100%',
       repeat_x = 'NoRepeat',
 

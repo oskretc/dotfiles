@@ -1,0 +1,26 @@
+#!/bin/bash
+zellij action new-tab 
+
+# zellij action go-to-tab-name DEVELOP
+# zellij run -c --cwd . -d right -- broot
+zellij action rename-tab DEVELOP
+zellij run -c --cwd . -- hx
+zellij action resize increase left
+zellij action resize increase left
+zellij action resize increase left
+zellij action resize increase left
+zellij action resize increase left
+zellij action resize increase left
+zellij action rename-pane hx
+zellij action new-pane -d down
+zellij action resize increase down
+zellij action resize increase down
+zellij action resize increase down
+zellij action resize increase down
+zellij action resize increase down
+zellij action focus-previous-pane
+zellij action focus-previous-pane
+
+zellij action write-chars "broot"
+zellij action write 13 # send <Enter> key
+# broot

@@ -37,6 +37,10 @@ C-b = ["save_selection"]
 C-q = ":q"
 C-tab = ":bn"
 ret = ["insert_mode","insert_newline"]
+d = "delete_selection_noyank"
+A-d = "delete_selection"
+c = "change_selection_noyank"
+A-c = "change_selection"
 
 
 S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]

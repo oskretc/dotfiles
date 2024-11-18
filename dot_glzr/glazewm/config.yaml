@@ -93,6 +93,24 @@ workspaces:
   - name: '9'
 
 window_rules:
+
+  - commands: ["move --workspace 1:Left"]
+    match:
+      - window_name: { equals: "Memos" }
+        window_process: { regex: "chrome" }
+  - commands: ["move --workspace 2:Center"]
+    match:
+      - window_process: { regex: "msedge|brave|chrome" }
+      
+      
+  - commands: ["move --workspace 5:Terminal"]
+    match:
+      - window_class: { equals: "org.wezfurlong.wezterm" }
+  - commands: ["move --workspace 4:Comms"]
+    match:
+      - window_class: { equals: "TeamsWebView" }
+      
+        
   - commands: ['ignore']
     match:
       # Ignores any Zebar windows.

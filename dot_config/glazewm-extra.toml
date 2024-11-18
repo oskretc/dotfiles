@@ -1,0 +1,15 @@
+[[window_rules]]
+command = "set title false"
+match_process_name = ".*"
+
+[[window_rules]]
+command = "set rounded true"
+match_process_name = ".*"
+
+[[focused_window_rules]]
+command = "set translucent 255"
+match_process_name = ".*"
+
+[[unfocused_window_rules]]
+command = "set translucent 220"
+match_process_name = ".*"

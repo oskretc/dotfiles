@@ -35,3 +35,7 @@ roots = ["composer.json", "index.php"]
 comment-token = "//"
 language-servers = [ "intelephense" ]
 indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "sql"
+language-servers = ["sqls"]

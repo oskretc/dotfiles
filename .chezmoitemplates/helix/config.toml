@@ -63,6 +63,7 @@ S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befo
 
 [keys.normal.";"]
 q = ":q!"
+c = ":bc"
 b = ":sh heliz-wezterm.sh blame"
 e = ":sh heliz-wezterm.sh explorer"
 f = ":sh heliz-wezterm.sh fzf"

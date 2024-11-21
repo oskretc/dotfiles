@@ -253,7 +253,7 @@ client.background       #ffffff
 
 # exec_always picom -f -c --shadow-color #FF0000
 exec_always "xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 -f"
-exec_always "feh --bg-fill ~/Downloads/GjrkLhP-dark-space-wallpaper.jpg"
+exec_always "feh --bg-fill ~/Downloads/bg.jpg"
 
 
 # default gaps

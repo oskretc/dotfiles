@@ -56,3 +56,8 @@ args = ["up", "--method", "stdio"]
 [[language]]
 name = "sql"
 language-servers = [ "sql-language-server" ]
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }

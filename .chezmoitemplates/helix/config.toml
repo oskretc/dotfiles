@@ -27,6 +27,7 @@ skip-levels = 1
 # Open the file(s) in a horizontal pane
 # h = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh hsplit"
 
+
 [keys.normal]
 
 C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
@@ -42,23 +43,25 @@ d = "delete_selection_noyank"
 A-d = "delete_selection"
 c = "change_selection_noyank"
 A-c = "change_selection"
-
+C-space = "insert_mode"
+"A-]" = ":bn"
+"A-[" = ":bp"
 
 S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 
 [keys.insert]
- C-s = ["normal_mode", ":write"]
-
+C-s = ["normal_mode", ":write"]
+C-space = "normal_mode"
 
 # [keys.normal.b]
 # c = ":bc"
 
 # [keys.normal.space]
-[keys.normal."]"]
-"]" = [":bn"]
-[keys.normal."["]
-"[" = [":bp"]
+# [keys.normal."]"]
+# "]" = [":bn"]
+# [keys.normal."["]
+# "[" = [":bp"]
 
 
 [keys.normal.";"]

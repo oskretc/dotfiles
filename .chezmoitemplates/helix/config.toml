@@ -6,6 +6,8 @@ mouse = true
 true-color = true
 bufferline = "always"
 line-number = "relative"
+color-modes = true
+popup-border = "all"
 
 [editor.soft-wrap]
 enable = true

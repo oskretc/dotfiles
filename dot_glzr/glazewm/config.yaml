@@ -5,6 +5,7 @@ general:
   startup_commands: ['shell-exec zebar']
   startup_commands: ['shell-exec glazewm-extra.exe']
 
+
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
 

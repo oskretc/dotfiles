@@ -30,6 +30,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #7::Send !7
 #8::Send !8
 #9::Send !9
+#0::Send !5
 
 ; Remap Win+Shift+1..9 to Alt+Shift+1..9
 #+1::Send !+1

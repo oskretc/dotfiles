@@ -55,6 +55,14 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Remap Win+f to fullscreen
 #f::Send !f
 
+; Remap Win+shift+r to alt+r   Enter rezise mode
+#+t::Send !r
+
+; Force quit
+#+q::Send !+q
+
+; Reload config
+#+r::Send !+r
 
 #IfWinActive
 

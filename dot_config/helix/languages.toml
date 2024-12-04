@@ -1,4 +1,8 @@
 
+# https://github.com/netmute/ctags-lsp
+[language-server.ctags-lsp]
+command = "ctags-lsp"
+
 # introduce new language server
 [language-server.scls]
 command = "simple-completion-language-server"
@@ -26,7 +30,13 @@ language-servers = [ "scls", "rust-analyzer" ]
 
 [[language]]
 name = "toml"
-language-servers = ["scls"]
+# language-servers = ["scls"]
+language-servers = ["ctags-lsp"]
+
+[[language]]
+name = "xml"
+language-servers = ["ctags-lsp"]
+
 
 
 [[language]]
@@ -87,34 +97,41 @@ language-servers = ["lsp-ai"]
 [[language]]
 name = "html"
 formatter = { command = 'prettier', args = ["--parser", "html"] }
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "json"
 formatter = { command = 'prettier', args = ["--parser", "json"] }
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "css"
 formatter = { command = 'prettier', args = ["--parser", "css"] }
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "tsx"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "yaml"
 formatter = { command = 'prettier', args = ["--parser", "yaml"] }
 auto-format = true
+language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "python"

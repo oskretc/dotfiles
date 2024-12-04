@@ -11,5 +11,5 @@ command = "set translucent 255"
 match_process_name = ".*"
 
 [[unfocused_window_rules]]
-command = "set translucent 220"
+command = "set translucent 245"
 match_process_name = ".*"

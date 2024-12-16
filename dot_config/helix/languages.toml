@@ -50,22 +50,15 @@ comment-token = "//"
 language-servers = [ "intelephense" ]
 indent = { tab-width = 4, unit = "    " }
 
-# [[language]]
-# name = "sql"
-# scope = "source.sql"
-# language-servers = ["sqls"]
-
-
-# [language-server.sqls]
-# command = "sqls"
-
-[language-server.sql-language-server]
-command = "sql-language-server"
-args = ["up", "--method", "stdio"]
-
 [[language]]
 name = "sql"
-language-servers = [ "sql-language-server" ]
+scope = "source.sql"
+language-servers = ["sqls"]
+
+
+[language-server.sqls]
+command = "sqls"
+# args = ["-t", "-l", "/home/osto/tmp/sqls.log"]
 
 
 ######## GO #####################

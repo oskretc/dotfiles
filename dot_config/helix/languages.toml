@@ -95,7 +95,7 @@ language-servers = ["ctags-lsp"]
 [[language]]
 name = "json"
 formatter = { command = 'prettier', args = ["--parser", "json"] }
-language-servers = ["ctags-lsp"]
+language-servers = ["ctags-lsp", "lsp-ai"]
 
 [[language]]
 name = "css"
@@ -137,4 +137,4 @@ language-servers = ["pylsp", "lsp-ai"]
 
 [language-server.lsp-ai]
 command = "lsp-ai"
-args = ["--config","/home/osto/.config/helix/lsp-ai.json"]
+args = ["--config","/home/oscar/.config/helix/lsp-ai-gemini.json", "--use-seperate-log-file"]

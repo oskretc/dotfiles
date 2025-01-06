@@ -137,4 +137,4 @@ language-servers = ["pylsp", "lsp-ai"]
 
 [language-server.lsp-ai]
 command = "lsp-ai"
-args = ["--config","/home/oscar/.config/helix/lsp-ai-gemini.json", "--use-seperate-log-file"]
+args = ["--config","/home/osto/.config/helix/lsp-ai-gemini.json"]

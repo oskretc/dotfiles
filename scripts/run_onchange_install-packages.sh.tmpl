@@ -33,13 +33,13 @@ fi
 if ! command -v hx 2>&1 >/dev/null
 then
   echo "Installing hx"
-  wget https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-x86_64-linux.tar.xz
-  tar xf helix-24.07-x86_64-linux.tar.xz  
-  cp ./helix-24.07-x86_64-linux/hx ~/.local/bin
-  cp -r ./helix-24.07-x86_64-linux/runtime ~/.config/helix
-  rm helix-24.07-x86_64-linux.tar.xz
+  wget https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz
+  tar xf helix-25.01-x86_64-linux.tar.xz  
+  cp ./helix-25.01-x86_64-linux/hx ~/.local/bin
+  cp -r ./helix-25.01-x86_64-linux/runtime ~/.config/helix
+  rm helix-25.01-x86_64-linux.tar.xz
   
-  rm -R helix-24.07-x86_64-linux
+  rm -R helix-25.01-x86_64-linux
 else
   echo "hx installed"
 fi

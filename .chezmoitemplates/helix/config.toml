@@ -8,6 +8,11 @@ bufferline = "always"
 line-number = "relative"
 color-modes = true
 popup-border = "all"
+end-of-line-diagnostics = "hint"
+path-completion = false
+
+[editor.inline-diagnostics]
+cursor-line = "error"
 
 [editor.soft-wrap]
 enable = true

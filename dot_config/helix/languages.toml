@@ -47,7 +47,7 @@ file-types = ["php", "inc", "php4", "php5", "phtml", "ctp"]
 shebangs = ["php"]
 roots = ["composer.json", "index.php"]
 comment-token = "//"
-language-servers = [ "intelephense" ]
+language-servers = ["scls", "intelephense" ]
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
@@ -129,7 +129,7 @@ language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "python"
-language-servers = ["pylsp", "lsp-ai"]
+language-servers = ["scls", "pylsp", "lsp-ai"]
 
 
 ##############################

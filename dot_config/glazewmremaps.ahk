@@ -19,6 +19,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #+Up::Send !+k
 #+Down::Send !+j
 
+; Remap Win+Shift+a to Alt+Shift+a to move workspaces across monitors
+#+a::Send !+a
+#+f::Send !+f
+
+
 ; Remap Win+1..9 to Alt+1..9
 
 #1::Send !1

@@ -66,8 +66,8 @@ command = "sqls"
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
-language-servers = ["scls", "gopls"]
-# language-servers = ["scls", "gopls", "lsp-ai"]
+# language-servers = ["scls", "gopls"]
+language-servers = ["scls", "gopls", "lsp-ai"]
 # language-servers = ["gopls"]
 
 [language-server.gopls]

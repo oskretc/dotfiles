@@ -36,7 +36,8 @@ skip-levels = 1
 
 
 [keys.normal]
-
+F2 = [":write lazysql.sql", ":sh sqlrun.sh"]
+C-e = ":sh ~/.config/helix/sqlrun.sh"
 C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
 C-k = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/rfvh open"
 C-l = ":sh zellij run -c -f --width 80% --height 80% -- lazygit"
@@ -62,6 +63,7 @@ S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_befo
 C-s = ["normal_mode", ":write"]
 C-space = "normal_mode"
 
+F2 = [":write", ":sh sqlrun.sh"]
 # [keys.normal.b]
 # c = ":bc"
 

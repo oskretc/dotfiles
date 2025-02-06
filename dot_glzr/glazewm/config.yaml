@@ -106,9 +106,16 @@ window_rules:
       # too much
       #- window_process: { regex: "msedge|brave|chrome" }
       - window_title: { equals: "BROWSER" }
+
+  # - commands: ["move --workspace 2:Center", "size --width 30%"]
+  #   match:
+  #     - window_title: { equals: "MINIBROWSER" }
+
+  
   - commands: ["move --workspace 2:Center", "size --width 30%"]
+  # - commands: ["move --workspace 7:LV2"]
     match:
-      - window_title: { equals: "MINIBROWSER" }
+      - window_process: { equals: "qutebrowser" }
 
   - commands: ["move --workspace 5:Terminal"]
     match:

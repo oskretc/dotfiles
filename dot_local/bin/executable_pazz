@@ -1,0 +1,5 @@
+
+
+ph eval 'print("db unlocked")'
+python ~/.local/bin/keepass2fzf.py | fzf --with-nth 1..3 -d "::" --bind 'enter:become(echo -n {4} | xsel -ib)'
+

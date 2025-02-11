@@ -271,3 +271,9 @@ export NVM_DIR="$HOME/.nvm"
 
 source_if_exists ~/.env
 
+zellij_toggle() {
+	za
+}
+zle -N zellij_toggle_widget zellij_toggle
+
+bindkey "^j" zellij_toggle_widget

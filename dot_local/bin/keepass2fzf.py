@@ -5,7 +5,7 @@ kp = open_database()
 
 for e in kp.entries:
     
-    print(f"{e.group}, {e.title}, {e.username}, {e.password}")
+    print(f"{e.group}::{e.title}::{e.username}::{e.password}::")
 
 
  

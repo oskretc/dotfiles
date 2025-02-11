@@ -1,5 +1,5 @@
 
 
 ph eval 'print("db unlocked")'
-python ~/.local/bin/keepass2fzf.py | fzf --with-nth 1..3 -d "::" --bind 'enter:become(echo -n {4} | xsel -ib)'
+python ~/.local/bin/keepass2fzf.py | fzf --ansi --height=20 --preview-window=down,1 --preview="echo {4}" --with-nth 1..3 -d "::" --bind 'enter:become(echo -n {4} | xsel -ib)'
 

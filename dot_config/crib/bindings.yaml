@@ -1,0 +1,94 @@
+- name: app
+  children:
+    - name: subcategory
+      bindings:
+        - name: do something
+          key: ctrl + a
+        - name: do something else
+          key: ctrl + b
+  bindings:
+    - name: one
+      key: shift + c
+- name: zellij
+  bindings:
+    - name: split vertical
+      key: ctrl + h
+    - name: split horizontal
+      key: ctrl + l
+    - name: Focus split up Zellij
+      key: raise + w
+    - name: Focus split down Zellij
+      key: raise + s
+    - name: Focus split left Zellij
+      key: raise + a
+    - name: Focus split right Zellij
+      key: raise + d
+- name: example
+  bindings:
+    - name: add your keys in
+      key: /home/oscar/.config/keyb/keyb.yml
+- name: wm
+  bindings:
+    - name: open terminal
+      key: win + enter
+- name: sofle
+  bindings:
+  children:
+    - name: lower symbols
+      bindings:
+        - name: tilde
+          key: lower + q
+        - name: tick
+          key: lower + w
+        - name: plus
+          key: lower + r
+        - name: minus
+          key: lower + t
+        - name: arroba
+          key: lower + a
+        - name: equal
+          key: lower + g
+        - name: curly brackets
+          key: lower + v,b
+        - name: left mouse button
+          key: lower + y
+        - name: underscore
+          key: lower + u
+        - name: parenthesis
+          key: lower + h,j
+        - name: square brackets
+          key: lower + n,m
+        - name: pipe
+          key: lower + '
+        - name: back slash
+          key: lower + /
+    - name: upper Navigation
+      bindings:
+        - name: Home
+          key: raise + u
+        - name: End
+          key: raise + o
+        - name: Left arrow
+          key: raise + h
+        - name: Down arrow
+          key: raise + j
+        - name: Up arrow
+          key: raise + k
+        - name: Right arrow
+          key: raise + l
+        - name: Next tab
+          key: raise + t
+        - name: Prev tab
+          key: raise + r
+        - name: Move WS to right monitor
+          key: raise + b
+        - name: Move WS to left monitor
+          key: raise + v
+        - name: Focus split up Zellij
+          key: raise + w
+        - name: Focus split down Zellij
+          key: raise + s
+        - name: Focus split left Zellij
+          key: raise + a
+        - name: Focus split right Zellij
+          key: raise + d

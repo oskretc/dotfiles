@@ -179,6 +179,7 @@ source <(fzf --zsh)
 # https://vitormv.github.io/fzf-themes#eyJib3JkZXJTdHlsZSI6InJvdW5kZWQiLCJib3JkZXJMYWJlbCI6IiIsImJvcmRlckxhYmVsUG9zaXRpb24iOjAsInByZXZpZXdCb3JkZXJTdHlsZSI6InJvdW5kZWQiLCJwYWRkaW5nIjoiMCIsIm1hcmdpbiI6IjAiLCJwcm9tcHQiOiI+ICIsIm1hcmtlciI6Ij4iLCJwb2ludGVyIjoi4peGIiwic2VwYXJhdG9yIjoi4pSAIiwic2Nyb2xsYmFyIjoi4pSCIiwibGF5b3V0IjoiZGVmYXVsdCIsImluZm8iOiJyaWdodCIsImNvbG9ycyI6ImZnKzojZDBkMGQwLGJnKzojMjYyNjI2LGhsOiM1Zjg3YWYsaGwrOiM1ZmQ3ZmYsaW5mbzojYWZhZjg3LG1hcmtlcjojODdmZjAwLHByb21wdDojZDYzZDAwLHNwaW5uZXI6I2FmNWZmZixwb2ludGVyOiNhZjVmZmYsaGVhZGVyOiM4N2FmYWYsYm9yZGVyOiMyNjI2MjYsbGFiZWw6I2FlYWVhZSxxdWVyeTojZDlkOWQ5In0=
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --multi
   --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626
   --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
   --color=prompt:#d63d00,spinner:#af5fff,pointer:#af5fff,header:#87afaf

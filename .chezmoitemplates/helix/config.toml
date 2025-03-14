@@ -15,7 +15,7 @@ path-completion = false
 cursor-line = "error"
 
 [editor.soft-wrap]
-enable = true
+enable = false
 
 
 

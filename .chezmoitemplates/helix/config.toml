@@ -17,8 +17,6 @@ cursor-line = "error"
 [editor.soft-wrap]
 enable = false
 
-
-
 [editor.indent-guides]
 render = true 
 character = "⸽"

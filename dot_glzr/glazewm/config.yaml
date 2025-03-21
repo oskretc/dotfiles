@@ -197,7 +197,7 @@ binding_modes:
 
 keybindings:
   # Shift focus in a given direction.
-  # remapped to win+arrows
+  # remapped to win+arrows remapped in the keyb, 
   - commands: ["focus --direction left"]
     bindings: ["alt+h"]
   - commands: ["focus --direction right"]
@@ -207,18 +207,9 @@ keybindings:
   - commands: ["focus --direction down"]
     bindings: ["alt+j"]
 
-  # # Shift focus in a given direction.
-  # - commands: ['focus --direction left']
-  #   bindings: ['alt+h', 'alt+left']
-  # - commands: ['focus --direction right']
-  #   bindings: ['alt+l', 'alt+right']
-  # - commands: ['focus --direction up']
-  #   bindings: ['alt+k', 'alt+up']
-  # - commands: ['focus --direction down']
-  #   bindings: ['alt+j', 'alt+down']
 
   # Move focused window in a given direction.
-  # remapped to win+arrows
+  # remapped to win+arrows remapped in the keyb
   - commands: ["move --direction left"]
     bindings: ["alt+shift+h"]
   - commands: ["move --direction right"]

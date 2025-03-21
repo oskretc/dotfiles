@@ -195,6 +195,7 @@ binding_modes:
       - commands: ["wm-disable-binding-mode --name pause"]
         bindings: ["alt+shift+p"]
 
+
 keybindings:
   # Shift focus in a given direction.
   # remapped to win+arrows remapped in the keyb, 

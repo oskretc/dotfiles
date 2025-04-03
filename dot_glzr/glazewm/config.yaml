@@ -4,6 +4,7 @@ general:
   # startup_commands: ['shell-exec %userprofile%/.glzr/zebar/start.bat']
   startup_commands: ["shell-exec zebar", "shell-exec wezterm-gui"]
 
+
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
 

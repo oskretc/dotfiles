@@ -2,7 +2,7 @@ general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
   # startup_commands: ['shell-exec %userprofile%/.glzr/zebar/start.bat']
-  startup_commands: ["shell-exec zebar"]
+  startup_commands: ["shell-exec zebar", "shell-exec wezterm-gui"]
 
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
@@ -66,8 +66,7 @@ window_behavior:
       centered: true
 
       # Whether to show floating windows as always on top.
-      shown_on_top: false
-
+      shown_on_top: true
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
       # maximize button, then it'll be fullscreen'ed normally instead.
@@ -98,9 +97,16 @@ workspaces:
   - name: "9"
 
 window_rules:
+
+
+  - commands: ["ignore"]
+    match:
+      - window_process: { regex: "Taskmgr"}
+    
   - commands: ["move --workspace 1:Left"]
     match:
       - window_title: { equals: "fman" }
+      - window_process: { equals: "OneCommander" } 
   - commands: ["move --workspace 1:Left","size --width 25%"]
     match:
       - window_title: { equals: "Memos" }
@@ -139,8 +145,8 @@ window_rules:
       - window_process: { equals: "zebar" }
 
       # ignore listary
-      - window_process: { equals: "Listary.exe" }
-      - window_class: { regex: "HwndWrapper" }
+      # - window_process: { equals: "Listary.exe" }
+      # - window_class: { regex: "HwndWrapper" }
       # Ignore rdp
       - window_process: { equals: "TscShellContainerClass" }
       - window_class: { equals: "TscShellContainerClass" }

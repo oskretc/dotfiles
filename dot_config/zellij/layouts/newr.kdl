@@ -3,7 +3,7 @@ layout {
         plugin location="tab-bar"
     }
     pane split_direction="vertical" size="70%" {
-        pane edit="src/main.rs"
+        pane 
     }
     pane split_direction="vertical" size="30%" {
         pane         

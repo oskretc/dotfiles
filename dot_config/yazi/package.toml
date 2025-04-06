@@ -1,5 +1,39 @@
-[plugin]
-deps = [{ use = "yazi-rs/plugins:full-border", rev = "600614a" }, { use = "llanosrocas/githead", rev = "bf150f3" }, { use = "AnirudhG07/rich-preview", rev = "8be4d27" }, { use = "yazi-rs/plugins:mime-ext", rev = "600614a" }, { use = "yazi-rs/plugins:smart-enter", rev = "600614a" }]
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "79193b3"
+hash = "1f3dad061209081a6b04dd6ff2cb06c7"
 
-[flavor]
-deps = [{ use = "yazi-rs/flavors:catppuccin-frappe", rev = "fc8eeaa" }, { use = "yazi-rs/flavors:catppuccin-latte", rev = "fc8eeaa" }, { use = "yazi-rs/flavors:catppuccin-mocha", rev = "fc8eeaa" }]
+[[plugin.deps]]
+use = "llanosrocas/githead"
+rev = "2375024"
+hash = "f46c42b1146bed331c7000b1efd076f5"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "2559e5f"
+hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mime-ext"
+rev = "79193b3"
+hash = "1f9fc0e55ff859a32e793833403ee7bd"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "79193b3"
+hash = "7918aab6a71caf31b58411f789195677"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "68326b4"
+hash = "7780fbbc8965da5a31a76a0dcd4d1216"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-latte"
+rev = "68326b4"
+hash = "5dffea1e87c50b18b8bb1599f6d4881a"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "68326b4"
+hash = "2ac87e1b3a61f5887472899e86535d29"

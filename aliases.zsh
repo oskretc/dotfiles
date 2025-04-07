@@ -45,7 +45,7 @@ alias fuzz="rg . | fzf "
 alias cz="chezmoi edit"
 alias cua="chezmoi update -a -x=encrypted"
 
-alias rustdev="zellij action new-tab --layout newr"
+alias hh="zellij action new-tab --layout newr"
 
 alias lg="lazygit"
 

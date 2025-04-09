@@ -49,6 +49,7 @@ alias hh="zellij action new-tab --layout newr"
 
 alias lg="lazygit"
 alias hk="hx"
+alias en="y"
 
 alias svnu="svn update --username osto --password $SVNPASS"
 alias svnst="svn status --username osto --password $SVNPASS"

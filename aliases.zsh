@@ -48,7 +48,7 @@ alias cua="chezmoi update -a -x=encrypted"
 alias hh="zellij action new-tab --layout newr"
 
 alias lg="lazygit"
-alias lg="helix"
+alias hk="helix"
 
 alias svnu="svn update --username osto --password $SVNPASS"
 alias svnst="svn status --username osto --password $SVNPASS"

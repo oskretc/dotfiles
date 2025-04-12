@@ -36,6 +36,9 @@ language-servers = ["ctags-lsp"]
 [[language]]
 name = "xml"
 language-servers = ["ctags-lsp"]
+[[language]]
+name = "c"
+language-servers = ["scls","ctags-lsp"]
 
 
 

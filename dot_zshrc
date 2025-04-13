@@ -279,5 +279,5 @@ bindkey "^j" zellij_toggle_widget
 
 . "$HOME/.cargo/env"
 
-bindkey '^I' fzf-tab-complete
+# bindkey '^I' fzf-tab-complete
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

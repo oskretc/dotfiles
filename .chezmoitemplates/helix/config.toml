@@ -34,6 +34,27 @@ skip-levels = 1
 
 
 [keys.normal]
+
+
+
+# for colemak
+#
+#
+#
+"m"  = "move_char_left"
+"n"  = "move_visual_line_down"
+"e"  = "move_visual_line_up"
+"i"  = "move_char_right"
+"l" = "move_next_word_end"
+"j" = "insert_mode"
+"J" = "insert_at_line_start"
+"k" = "search_next"
+"K" = "search_prev"
+
+
+
+
+
 F2 = [":write lazysql.sql", ":sh sqlrun.sh"]
 C-e = ":sh ~/.config/helix/sqlrun.sh"
 C-y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
@@ -72,10 +93,20 @@ F2 = [":write", ":sh sqlrun.sh"]
 # [keys.normal."["]
 # "[" = [":bp"]
 
+# for colemak
+[keys.normal."h"]
+"m" = "match_brackets"
+"s" = "surround_add"
+"r" = "surround_replace"
+"d" = "surround_delete"
+"a" = "select_textobject_around"
+"i" = "select_textobject_inner"
+
 
 [keys.normal.";"]
 q = ":q!"
 c = ":bc"
+y = ":sh zellij run -c -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh open"
 b = ":sh heliz-wezterm.sh blame"
 e = ":sh heliz-wezterm.sh explorer"
 f = ":sh heliz-wezterm.sh fzf"

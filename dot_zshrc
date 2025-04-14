@@ -78,7 +78,8 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose docker fzf-tab sudo chezmoi alias-finder zsh-helix-mode zsh-syntax-highlighting)
+# plugins=(git docker-compose docker fzf-tab sudo chezmoi alias-finder zsh-helix-mode zsh-syntax-highlighting)
+plugins=(git docker-compose docker fzf-tab sudo chezmoi alias-finder )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -279,5 +280,5 @@ bindkey "^j" zellij_toggle_widget
 
 . "$HOME/.cargo/env"
 
-bindkey '^I' fzf-tab-complete
+# bindkey '^I' fzf-tab-complete
 # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

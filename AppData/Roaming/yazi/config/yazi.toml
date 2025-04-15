@@ -1,0 +1,11 @@
+
+[manager]
+show_hidden = true
+
+
+[opener]
+edit = [
+	{ run = '${EDITOR:-hx} "$@"', desc = "$EDITOR", block = true, for = "unix" },
+	
+	{ run = 'hx %*', block = true,  desc = "code (block)",   for = "windows" },
+]

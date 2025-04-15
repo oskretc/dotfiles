@@ -1,4 +1,6 @@
 @echo off
+REM run this to add the "alias"
+REM doskey y=for /f "delims=" %i in ('yac.bat $*') do pushd "%i"
 setlocal
 set "YAZI_CWD_FILE=%TEMP%\yazi-cwd.%RANDOM%%RANDOM%.tmp"
 set "TARGET_CWD="

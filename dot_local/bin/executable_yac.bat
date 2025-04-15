@@ -9,7 +9,7 @@ REM Run yazi, passing all arguments (%*) and the temporary file path
 yazi %* --cwd-file="%YAZI_CWD_FILE%"
 
 REM Assume failure initially
-set "FINAL_PATH=eee"
+set "FINAL_PATH="
 
 REM Check if the temporary file was created and read successfully
 if exist "%YAZI_CWD_FILE%" (

@@ -26,6 +26,6 @@ prepend_keymap = [
 	{ on = [ ";", "l" ], run = "shell --block lazygit",        desc = "Lazygit in foreground" },
 	{ on = [ ";", "z" ], run = "shell --block 'zellij run -c -f --width 80% --height 80% -- lazygit'",        desc = "Lazygit floating" },
 	{ on = [ ";", "c" ], run = "shell --block 'chezmoi add $0'",        desc = "Chezmoi add" },
+	{ on = [ ";", "g" ], run = "plugin vcs-files",        desc = "Show Git file changes" },
 
 ]
-

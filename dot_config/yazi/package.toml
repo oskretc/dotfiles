@@ -1,27 +1,32 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "79193b3"
+rev = "4b027c7"
 hash = "1f3dad061209081a6b04dd6ff2cb06c7"
 
 [[plugin.deps]]
 use = "llanosrocas/githead"
-rev = "2375024"
-hash = "f46c42b1146bed331c7000b1efd076f5"
+rev = "7104df2"
+hash = "407bdfbed7b052dad108eeac88270f25"
 
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "2559e5f"
-hash = "c9a3d0731e7d7340e2c6d6126b1f3aa3"
+rev = "fdcf373"
+hash = "bd1737dd44b202f412122e6a3b378d4c"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mime-ext"
-rev = "79193b3"
-hash = "1f9fc0e55ff859a32e793833403ee7bd"
+rev = "4b027c7"
+hash = "5e24c167e9ae9a203a48f2a438b8c705"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "79193b3"
+rev = "4b027c7"
 hash = "7918aab6a71caf31b58411f789195677"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:vcs-files"
+rev = "4b027c7"
+hash = "36405f8781fcaf33ceab24dffd5cea19"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"

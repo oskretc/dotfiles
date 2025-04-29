@@ -9,3 +9,15 @@ edit = [
 	
 	{ run = 'hx %*', block = true,  desc = "code (block)",   for = "windows" },
 ]
+open = [
+
+	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
+
+]
+[open]
+prepend_rules = [
+	{ name = "*.toml", use = "edit" },
+	{ name = "*.nXML", use = "open" },
+
+
+]

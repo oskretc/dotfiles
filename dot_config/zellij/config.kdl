@@ -32,6 +32,7 @@ keybinds {
         bind "Ctrl Left" { MoveFocusOrTab "Left"; }
         bind "Ctrl Right" { MoveFocusOrTab "Right"; }
         
+
     }
     resize {
 

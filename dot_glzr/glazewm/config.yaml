@@ -144,6 +144,7 @@ window_rules:
     match:
       # Ignores any Zebar windows.
       - window_process: { equals: "zebar" }
+      - window_title: { equals: "OverKeys" }
 
       # ignore listary
       # - window_process: { equals: "Listary.exe" }

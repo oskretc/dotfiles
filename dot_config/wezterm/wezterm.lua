@@ -53,7 +53,7 @@ config.keys = {
     mods = 'ALT',
     action = wezterm.action.ShowLauncherArgs { flags = 'FUZZY|TABS' },
   },
-  { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
+  { key = 'z', mods = 'ALT', action = wezterm.action.ShowLauncher },
 }
 
 

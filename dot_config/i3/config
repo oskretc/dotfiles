@@ -69,7 +69,7 @@ bindsym $mod+Shift+q kill
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-
+bindsym Mod4+b exec ~/tpr/qutebrowser/.venv/bin/python3 -m qutebrowser
 bindsym $super+d exec i3-dmenu-desktop --dmenu="dmenu -i -b \
 -fn 'Poppins:size=9' -nb '#141c21' -nf '#93a1a1' \
 -sb '#289c93' -sf '#141c21'"

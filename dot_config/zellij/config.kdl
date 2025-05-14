@@ -27,8 +27,8 @@ keybinds {
 
         unbind "Ctrl g"
         bind "F1" { SwitchToMode "Normal"; }
-        bind "Ctrl Down" { MoveFocusOrTab "Down"; }
-        bind "Ctrl Up" { MoveFocusOrTab "Up"; }
+        bind "Ctrl Down" { MoveFocus "Down"; }
+        bind "Ctrl Up" { MoveFocus "Up"; }
         bind "Ctrl Left" { MoveFocusOrTab "Left"; }
         bind "Ctrl Right" { MoveFocusOrTab "Right"; }
         

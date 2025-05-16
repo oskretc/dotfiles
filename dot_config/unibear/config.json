@@ -1,0 +1,11 @@
+{
+  "model": "o4-mini",
+  "port": 12496,
+  "theme": "dark",
+  "user_name": "Alice",
+  "key_bindings": {
+    "useGitTools": ":",
+    "useEditTools": "+",
+    "useWebTools": "?"
+  }
+}

@@ -7,7 +7,7 @@ layout {
     }
     pane split_direction="vertical" size="30%" {
         pane         
-        pane cwd="$HOME" command="tail" {
+        pane cwd="$HOME" command="tail" size="30%" {
                 args "-f" ".cache/helix/helix.log"
             }
     }

@@ -1,0 +1,39 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "c0ad8a3"
+hash = "b16b6e08085a3dfec72335415e4c83ed"
+
+[[plugin.deps]]
+use = "llanosrocas/githead"
+rev = "c90882f"
+hash = "87da0f9a8ff045221772649ba65a89bd"
+
+[[plugin.deps]]
+use = "AnirudhG07/rich-preview"
+rev = "de28f50"
+hash = "23cf02291f2d911e615df9e2bd8fa9cf"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mime-ext"
+rev = "c0ad8a3"
+hash = "30bf27ffcc32f385291b3061b4cf36f3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "c0ad8a3"
+hash = "52f58299e638a16bc1e10bda1f0b295"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
+rev = "fc8eeaa"
+hash = ""
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-latte"
+rev = "fc8eeaa"
+hash = ""
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "fc8eeaa"
+hash = ""

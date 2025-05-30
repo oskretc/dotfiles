@@ -23,6 +23,16 @@ use = "yazi-rs/plugins:smart-enter"
 rev = "c0ad8a3"
 hash = "52f58299e638a16bc1e10bda1f0b295"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:vcs-files"
+rev = "c0ad8a3"
+hash = "3fd999fd31dc40789bf47855d8ab72a5"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "c0ad8a3"
+hash = "a65dc998e4742a4f6561623e6154e1b9"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"
 rev = "fc8eeaa"

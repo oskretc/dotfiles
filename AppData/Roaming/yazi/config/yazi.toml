@@ -17,6 +17,8 @@ open = [
 
 [open]
 prepend_rules = [
+
+	{ name = "*.ini", use = "edit" },
 	{ name = "*.toml", use = "edit" },
 	{ name = "*.nXML", use = "open" },
 

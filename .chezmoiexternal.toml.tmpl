@@ -2,7 +2,7 @@
  
 {{ if ne .chezmoi.os "windows" }}
 
-{{ $lazygitVersion := "0.44.1"}}
+{{ $lazygitVersion := "0.51.1"}}
 [".local/bin/lazygit"]
   type = "archive-file"
   url = "https://github.com/jesseduffield/lazygit/releases/download/v{{ $lazygitVersion }}/lazygit_{{ $lazygitVersion }}_Linux_x86_64.tar.gz"
@@ -15,7 +15,7 @@
   path = "skm"
 
 
-{{ $fzfVersion := "0.57.0"}}
+{{ $fzfVersion := "0.62.0"}}
 [".local/bin/fzf"]
   type = "archive-file"
   url = "https://github.com/junegunn/fzf/releases/download/v{{ $fzfVersion }}/fzf-{{ $fzfVersion }}-linux_amd64.tar.gz"

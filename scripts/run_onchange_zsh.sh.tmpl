@@ -1,0 +1,13 @@
+
+{{ if eq .chezmoi.os "linux" -}}
+
+sudo apt install -y zsh
+
+if [ ! -e ~/.oh-my-zsh ]; then
+  echo "Installing ohmyzsh"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "ohmyzsh installed"
+  
+fi
+{{ end -}}

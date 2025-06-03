@@ -1,0 +1,43 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+VERSION="25.01.1"
+  echo "Installing hx ${VERSION}"
+  # wget https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz
+  # tar xf helix-25.01-x86_64-linux.tar.xz  
+  # cp ./helix-25.01-x86_64-linux/hx ~/.local/bin
+  # cp -r ./helix-25.01-x86_64-linux/runtime ~/.config/helix
+  # rm helix-25.01-x86_64-linux.tar.xz
+  
+  # rm -R helix-25.01-x86_64-linux
+# Construct the filename and directory name using the VERSION variable
+FILENAME="helix-${VERSION}-x86_64-linux.tar.xz"
+DIRNAME="helix-${VERSION}-x86_64-linux"
+DOWNLOAD_URL="https://github.com/helix-editor/helix/releases/download/${VERSION}/${FILENAME}"
+
+# Download the release
+echo "Downloading ${DOWNLOAD_URL}"
+wget "${DOWNLOAD_URL}"
+
+# Extract the archive
+echo "Extracting ${FILENAME}"
+tar xf "${FILENAME}"
+
+# Create necessary directories if they don't exist
+mkdir -p ~/.local/bin
+mkdir -p ~/.config/helix
+
+# Copy the hx binary
+echo "Installing hx to ~/.local/bin"
+cp "./${DIRNAME}/hx" ~/.local/bin/
+
+# Copy runtime files
+echo "Installing runtime files to ~/.config/helix"
+cp -r "./${DIRNAME}/runtime/"* ~/.config/helix/
+
+# Clean up downloaded and extracted files
+echo "Cleaning up..."
+rm "${FILENAME}"
+rm -rf "${DIRNAME}"
+
+echo "Helix editor version ${VERSION} installation complete! 👍"
+{{ end -}}

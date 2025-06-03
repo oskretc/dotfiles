@@ -4,49 +4,9 @@
 
 
 
-if ! command -v hx 2>&1 >/dev/null
-then
-  echo "Installing hx"
-  wget https://github.com/helix-editor/helix/releases/download/25.01/helix-25.01-x86_64-linux.tar.xz
-  tar xf helix-25.01-x86_64-linux.tar.xz  
-  cp ./helix-25.01-x86_64-linux/hx ~/.local/bin
-  cp -r ./helix-25.01-x86_64-linux/runtime ~/.config/helix
-  rm helix-25.01-x86_64-linux.tar.xz
-  
-  rm -R helix-25.01-x86_64-linux
-else
-  echo "hx installed"
-fi
 
 
-if [ ! -e ~/.oh-my-zsh/custom/plugins/fzf-tab ]; then
-# Install fzf-tab 
-# https://github.com/Aloxaf/fzf-tab
-  git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
-fi
 
-if [ -n "$(dpkg -s eza 2>/dev/null | grep 'Status: install ok installed')" ]; then
-  echo "eza already installed"
-else
-  echo "installing eza"
-  sudo mkdir -p /etc/apt/keyrings
-  wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
-  echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
-  sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.list
-  sudo apt update
-  sudo apt install -y eza
-fi
-
-if ! command -v gdrive 2>&1 >/dev/null
-then
-  echo "Installing gdrive"
-  wget https://github.com/glotlabs/gdrive/releases/latest/download/gdrive_linux-x64.tar.gz
-  tar -xzf gdrive_linux-x64.tar.gz
-  mv gdrive ~/.local/bin
-  rm gdrive_linux-x64.tar.gz
-else
-  echo "gdrive installed"
-fi
 
 
 if ! command -v delta 2>&1 >/dev/null

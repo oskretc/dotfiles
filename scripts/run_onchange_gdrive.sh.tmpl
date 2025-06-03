@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+
+  echo "Installing gdrive"
+  wget https://github.com/glotlabs/gdrive/releases/latest/download/gdrive_linux-x64.tar.gz
+  tar -xzf gdrive_linux-x64.tar.gz
+  mv gdrive ~/.local/bin
+  rm gdrive_linux-x64.tar.gz
+echo "eza installation complete! 👍"
+{{ end -}}

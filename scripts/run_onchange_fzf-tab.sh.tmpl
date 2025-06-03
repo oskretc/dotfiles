@@ -1,0 +1,8 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+  echo "Installing eza"
+
+
+  git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+echo "eza installation complete! 👍"
+{{ end -}}

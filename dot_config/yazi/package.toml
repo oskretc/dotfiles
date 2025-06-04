@@ -1,31 +1,31 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "llanosrocas/githead"
-rev = "c90882f"
-hash = "3c3933ed61aa24d802d6b06d3556484"
+rev = "8df5b68"
+hash = "f9d28d35e8e500a802b95a8b46117123"
 
 [[plugin.deps]]
 use = "AnirudhG07/rich-preview"
-rev = "de28f50"
-hash = "b9cd4027db110b4228889be32462f363"
+rev = "843c3fa"
+hash = "b4040931f0d2f9670ddb4923e55cd881"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mime-ext"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "6094c7e7def6d131323e53d641f1bddd"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:smart-enter"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "a7ab702e1ef0c097defbc976ed34c186"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:vcs-files"
-rev = "c0ad8a3"
+rev = "63f9650"
 hash = "70898957e9e4c1ca291ff26e8fdc434"
 
 [[plugin.deps]]

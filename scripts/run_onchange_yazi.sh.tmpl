@@ -1,0 +1,23 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+
+  echo "installing yazi"
+# Download the latest release
+wget https://github.com/sxyazi/yazi/releases/latest/download/yazi-x86_64-unknown-linux-gnu.zip
+
+# Unzip the downloaded file
+unzip yazi-x86_64-unknown-linux-gnu.zip
+
+# Move the extracted binary to ~/.local/bin
+mv yazi-x86_64-unknown-linux-gnu/yazi ~/.local/bin/
+
+mv yazi-x86_64-unknown-linux-gnu/ya ~/.local/bin/
+
+# Cleanup the downloaded zip file
+rm yazi-x86_64-unknown-linux-gnu.zip
+
+rm -R yazi-x86_64-unknown-linux-gnu
+
+ya pack -u
+echo "delta installation complete! 👍"
+{{ end -}}

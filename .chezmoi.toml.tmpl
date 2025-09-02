@@ -6,6 +6,8 @@ encryption = "gpg"
     autoCommit = true
     autoPush = true
 
+[diff]
+command = "delta"
 
 {{ if eq .chezmoi.os "windows" }}    
 [edit]

@@ -9,6 +9,8 @@ encryption = "gpg"
 [diff]
 command = "delta --side-by-side"
 
+pager = "diff-so-fancy"
+
 {{ if eq .chezmoi.os "windows" }}    
 [edit]
     command = "hx"

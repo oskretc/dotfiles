@@ -7,7 +7,7 @@ encryption = "gpg"
     autoPush = true
 
 [diff]
-command = "delta"
+command = "delta --side-by-side"
 
 {{ if eq .chezmoi.os "windows" }}    
 [edit]

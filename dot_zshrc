@@ -282,3 +282,4 @@ bindkey "^j" zellij_toggle_widget
 
 # bindkey '^I' fzf-tab-complete
 # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$HOME/.local/bin:$PATH"

@@ -7,9 +7,9 @@ encryption = "gpg"
     autoPush = true
 
 [diff]
-command = "delta --side-by-side"
+pager = "delta --side-by-side"
 
-pager = "diff-so-fancy"
+
 
 {{ if eq .chezmoi.os "windows" }}    
 [edit]

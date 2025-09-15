@@ -1,5 +1,6 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
+local act = wezterm.action
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -54,7 +55,18 @@ config.keys = {
     action = wezterm.action.ShowLauncherArgs { flags = 'FUZZY|TABS' },
   },
   { key = 'z', mods = 'ALT', action = wezterm.action.ShowLauncher },
+
 }
+copy_mode = wezterm.gui.default_key_tables().copy_mode
+table.insert(copy_mode, { key = 'm', mods = 'NONE', action = act.CopyMode 'MoveLeft' })
+
+table.insert(copy_mode, { key = 'n', mods = 'NONE', action = act.CopyMode 'MoveDown' })
+table.insert(copy_mode, { key = 'e', mods = 'NONE', action = act.CopyMode 'MoveUp' })
+table.insert(copy_mode, { key = 'i', mods = 'NONE', action = act.CopyMode 'MoveRight' })
+config.key_tables = {
+  copy_mode = copy_mode
+}
+-- print("Hello World!")
 
 
 

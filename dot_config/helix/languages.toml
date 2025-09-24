@@ -35,7 +35,14 @@ language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "xml"
-language-servers = ["ctags-lsp"]
+file-types = ["nxml", "xml", "svg", "xsd", "xslt", "xsl" ]
+auto-format = true
+formatter = { command = "xmllint", args = ["--format", "-"] }
+language-servers = [ "xml" ]
+# language-servers = [ "xml","ctags-lsp" ]
+[language-server.xml]
+command = "lemminx-linux"
+
 [[language]]
 name = "c"
 language-servers = ["scls","ctags-lsp"]

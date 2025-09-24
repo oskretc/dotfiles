@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
   echo "Installing Lemminx"
-wget -P ~/tmp/ https://github.com/redhat-developer/vscode-xml/releases/download/0.27.1/lemminx-linux.zip
+wget -P ~/tmp/ https://github.com/redhat-developer/vscode-xml/releases/download/0.29.0/lemminx-linux.zip
 unzip ~/tmp/lemminx-linux.zip
 mv ~/tmp/lemminx-linux ~/.local/bin
 

@@ -9,6 +9,7 @@ desc = "Cancel input"
 prepend_keymap = [
 
 	{ on = "<Enter>", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
+	{ on = ["g", "s"], run = "plugin vcs-files", desc = "Show Git file changes" },
 	# Hopping
 	{ on = "e", run = "arrow -1", desc = "Previous file" },
 	{ on = "n", run = "arrow 1", desc = "Next file" },

@@ -1,0 +1,7 @@
+[ai]
+# A global switch to enable or disable all AI-powered functionality
+enabled = true
+
+[gist]
+id = "0e76d3ec92d307ef64a2ef32d85f285a"
+token = ""

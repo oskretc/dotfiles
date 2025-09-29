@@ -1,5 +1,6 @@
 require("folder-rules"):setup()
 require("full-border"):setup()
+require("git"):setup()
 Header:children_add(function()
 	if ya.target_family() ~= "unix" then
 		return ""

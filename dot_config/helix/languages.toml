@@ -36,21 +36,35 @@ language-servers = ["ctags-lsp"]
 [[language]]
 name = "xml"
 file-types = ["nxml", "xml", "svg", "xsd", "xslt", "xsl" ]
-auto-format = true
-formatter = { command = "xmllint", args = ["--format", "-"] }
+# auto-format = true
+# formatter = { command = "xmllint", args = ["--format", "-"] }
 language-servers = [ "xml" ]
 # language-servers = [ "xml","ctags-lsp" ]
 [language-server.xml]
 command = "lemminx-linux"
 
 [[language]]
+name = "c-sharp"
+scope = "source.csharp"
+injection-regex = "c-?sharp"
+file-types = ["cs", "csx", "cake"]
+roots = ["sln", "csproj"]
+# comment-tokens = ["//", "///"]
+# block-comment-tokens = { start = "/*", end = "*/" }
+indent = { tab-width = 4, unit = "\t" }
+language-servers = [ "omnisharp" ]
+[language-server.omnisharp]
+command = "/home/osto/tmp/omnisharp/OmniSharp"
+args = [ "--languageserver" ]
+
+[[language]]
 name = "c"
-language-servers = ["scls","ctags-lsp"]
+language-servers = ["scls","ctags-sp"]
 
 
 
 [[language]]
-name = "php"
+name= "php"
 scope = "source.php"
 injection-regex = "php"
 file-types = ["php", "inc", "php4", "php5", "phtml", "ctp"]

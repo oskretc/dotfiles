@@ -26,10 +26,17 @@ skip-levels = 1
 [editor.cursor-shape]
 normal = "block"
 insert = "bar"
-select = "bar"
+select = "underline"
 
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "|"
 
-
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 # [keys.normal]
 
 # Open the file(s) in the current window

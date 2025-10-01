@@ -1,4 +1,6 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
-cargo install scooter
+# cargo install scooter
+wget -c https://github.com/thomasschafer/scooter/releases/download/v0.6.0/scooter-v0.6.0-x86_64-unknown-linux-musl.tar.gz
+
 {{ end -}}

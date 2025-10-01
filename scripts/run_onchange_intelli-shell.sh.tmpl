@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+curl -sSf https://raw.githubusercontent.com/lasantosr/intelli-shell/main/install.sh | sh
+{{ end -}}

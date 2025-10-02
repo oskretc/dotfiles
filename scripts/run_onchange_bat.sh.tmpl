@@ -1,0 +1,6 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+rm ~/.local/bin/bat
+
+bin install github.com/sharkdp/bat
+{{ end -}}

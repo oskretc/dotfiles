@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+  echo "Installing lazygit"
+rm ~/.local/bin/lazygit
+
+bin install github.com/jesseduffield/lazygit
+
+echo "lazygit installation complete! 👍"
+{{ end -}}

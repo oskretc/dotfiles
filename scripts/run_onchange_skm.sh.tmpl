@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+rm ~/.local/bin/skm
+
+bin install github.com/TimothyYe/skm
+
+{{ end -}}

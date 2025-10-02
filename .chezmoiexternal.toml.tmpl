@@ -2,24 +2,7 @@
  
 {{ if ne .chezmoi.os "windows" }}
 
-{{ $lazygitVersion := "0.51.1"}}
-[".local/bin/lazygit"]
-  type = "archive-file"
-  url = "https://github.com/jesseduffield/lazygit/releases/download/v{{ $lazygitVersion }}/lazygit_{{ $lazygitVersion }}_Linux_x86_64.tar.gz"
-  path = "lazygit"
 
-{{ $skmVersion := "0.8.6"}}
-[".local/bin/skm"]
-  type = "archive-file"
-  url = "https://github.com/TimothyYe/skm/releases/download/v{{ $skmVersion }}/skm_{{ $skmVersion }}_Linux_x86_64.tar.gz"
-  path = "skm"
-
-
-{{ $fzfVersion := "0.62.0"}}
-[".local/bin/fzf"]
-  type = "archive-file"
-  url = "https://github.com/junegunn/fzf/releases/download/v{{ $fzfVersion }}/fzf-{{ $fzfVersion }}-linux_amd64.tar.gz"
-  path = "fzf"
   
 {{ $zellijVersion := "0.42.2"}}
 [".local/bin/zellij"]
@@ -27,17 +10,7 @@
   url = "https://github.com/zellij-org/zellij/releases/download/v{{ $zellijVersion }}/zellij-x86_64-unknown-linux-musl.tar.gz"
   path = "zellij"
 
-{{ $fdVersion := "10.2.0"}}
-[".local/bin/fd"]
-  type = "archive-file"
-  url = "https://github.com/sharkdp/fd/releases/download/v{{ $fdVersion }}/fd-v{{ $fdVersion }}-x86_64-unknown-linux-gnu.tar.gz"
-  path = "fd-v{{ $fdVersion }}-x86_64-unknown-linux-gnu/fd"
 
-{{ $batVersion := "0.25.0"}}
-[".local/bin/bat"]
-  type = "archive-file"
-  url = "https://github.com/sharkdp/bat/releases/download/v{{ $batVersion }}/bat-v{{ $batVersion }}-x86_64-unknown-linux-gnu.tar.gz"
-  path = "bat-v{{ $batVersion }}-x86_64-unknown-linux-gnu/bat"
 
 
 

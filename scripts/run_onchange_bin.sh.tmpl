@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
   echo "Installing bin"
-wgen https://github.com/marcosnils/bin/releases/download/v0.23.1/bin_0.23.1_linux_amd64
+wget https://github.com/marcosnils/bin/releases/download/v0.23.1/bin_0.23.1_linux_amd64
 sudo chmod +x bin_0.23.1_linux_amd64
 bin_0.23.1_linux_amd64 install github.com/marcosnils/bin
 

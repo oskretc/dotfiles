@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+  echo "Installing fzf"
+rm ~/.local/bin/fzf
+
+bin install github.com/junegunn/fzf
+
+echo "fzf installation complete! 👍"
+{{ end -}}

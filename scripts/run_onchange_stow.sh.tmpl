@@ -1,0 +1,6 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+
+sudo nala install -y stow
+
+{{ end -}}

@@ -2,8 +2,9 @@
 #!/bin/sh
   echo "Installing bin"
 wget https://github.com/marcosnils/bin/releases/download/v0.23.1/bin_0.23.1_linux_amd64
-sudo chmod +x bin_0.23.1_linux_amd64
-bin_0.23.1_linux_amd64 install github.com/marcosnils/bin
+cp bin_0.23.1_linux_amd64 ~/.local/binn
+sudo chmod +x ~/.local/binn
+~/.local/binn install github.com/marcosnils/bin
 
 echo "bin installation complete! 👍"
 {{ end -}}

@@ -1,0 +1,6 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/sh
+rm ~/.local/bin/fd
+
+bin install github.com/darrenburns/posting
+{{ end -}}

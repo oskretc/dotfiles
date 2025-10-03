@@ -79,7 +79,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git docker-compose docker fzf-tab sudo chezmoi alias-finder zsh-helix-mode zsh-syntax-highlighting)
-plugins=(git docker-compose docker fzf-tab sudo chezmoi alias-finder )
+plugins=(git docker-compose docker fzf-tab sudo chezmoi alias-finder pass )
 
 source $ZSH/oh-my-zsh.sh
 

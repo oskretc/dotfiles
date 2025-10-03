@@ -5,7 +5,7 @@ alias sup="svn update"
 alias ezsh="micro ~/.zshrc"
 alias rzsh="source ~/.zshrc"
 alias js="j -s"
-alias pass="kpcli --kdb ~/TheSecond.kdbx --readonly"
+# alias pass="kpcli --kdb ~/TheSecond.kdbx --readonly"
 
 #from uranus
 alias hastop="dco stop homeassistant"

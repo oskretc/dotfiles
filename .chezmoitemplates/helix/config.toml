@@ -121,8 +121,10 @@ F2 = [":write", ":sh sqlrun.sh"]
 "d" = "surround_delete"
 "a" = "select_textobject_around"
 "i" = "select_textobject_inner"
+{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
 "u" = "@hi\""
 "U" = "@ha\""
+{{ end }}
 
 # for colemak
 

@@ -7,7 +7,9 @@ true-color = true
 line-number = "relative"
 color-modes = true
 popup-border = "all"
+{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
 end-of-line-diagnostics = "hint"
+{{ end }}
 path-completion = false
 jump-label-alphabet = "ntesirmghdlpuf"
 {{ if eq .chezmoi.hostname "bbjen100" }}
@@ -17,9 +19,10 @@ separator = "|"
 {{ else }}
 bufferline = "always"
 {{ end }}
-
+{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
 [editor.inline-diagnostics]
 cursor-line = "error"
+{{ end }}
 
 [editor.soft-wrap]
 enable = false

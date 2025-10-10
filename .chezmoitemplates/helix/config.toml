@@ -11,6 +11,13 @@ popup-border = "all"
 end-of-line-diagnostics = "hint"
 path-completion = false
 jump-label-alphabet = "ntesirmghdlpuf"
+{{ if eq .chezmoi.hostname "bbjen100" }}
+[editor.bufferline]
+render-mode = "multiple"
+separator = "|"
+{{ else }}
+bufferline = "always"
+{{ end }}
 
 [editor.inline-diagnostics]
 cursor-line = "error"

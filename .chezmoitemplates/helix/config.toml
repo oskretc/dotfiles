@@ -1,5 +1,5 @@
 # theme = "monokai_aqua"
-theme = "dark_plus_oscar"
+theme = "kaolin-valley-dark"
 
 [editor]
 mouse = true

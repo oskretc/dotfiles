@@ -1,4 +1,4 @@
-{{ if eq .chezmoi.os "linux" -}}
+{{ if (and ( eq .chezmoi.os "linux") (eq .chezmoi.hostname "osto2" "bbjen100")) -}}
 #!/bin/sh
 
 sudo nala install -y pipx python3-pip python-is-python3

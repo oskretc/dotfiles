@@ -7,22 +7,18 @@ true-color = true
 line-number = "relative"
 color-modes = true
 popup-border = "all"
-{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
+rulers = [120]
 end-of-line-diagnostics = "hint"
-{{ end }}
+
 path-completion = false
 jump-label-alphabet = "ntesirmghdlpuf"
-{{ if eq .chezmoi.hostname "bbjen100" }}
-[editor.bufferline]
-render-mode = "multiple"
-separator = "|"
-{{ else }}
+
 bufferline = "always"
-{{ end }}
-{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
+
+
 [editor.inline-diagnostics]
 cursor-line = "error"
-{{ end }}
+
 
 [editor.soft-wrap]
 enable = false
@@ -71,10 +67,10 @@ mode.select = "SELECT"
 "k" = "search_next"
 "K" = "search_prev"
 
-{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
+
 # delete entire line 
 "D" = "@xd"
-{{ end }}
+
 
 
 # F2 = [":write lazysql.sql", ":sh sqlrun.sh"]
@@ -124,10 +120,10 @@ F2 = [":write", ":sh sqlrun.sh"]
 "d" = "surround_delete"
 "a" = "select_textobject_around"
 "i" = "select_textobject_inner"
-{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
+
 "u" = "@hi\""
 "U" = "@ha\""
-{{ end }}
+
 
 # for colemak
 
@@ -150,35 +146,4 @@ r = ":config-reload"
 w = ":toggle soft-wrap.enable"
 
 
-{{ if eq .chezmoi.hostname "bbjen100" }}
-[editor.gradient-borders]
-enable = true
-thickness = 1
-direction = "radial"
-start-color = "#00FF00"        # Lime Green
-end-color = "#008000"          # Dark Green
-animation-speed = 5
 
-[editor.cmdline]
-# Command line style: "bottom" (default) or "popup" (noice.nvim style)
-style = "popup"
-
-# Show command type icons (default: true)
-show-icons = true
-
-# Popup dimensions
-min-popup-width = 60    # Minimum width for popup cmdline
-max-popup-width = 80    # Maximum width for popup cmdline
-
-# Use full height when style is popup (removes bottom space, default: false)
-# Only applies when style = "popup"
-use-full-height = true
-
-# Customize command icons
-[editor.cmdline.icons]
-search = "/"
-command = ":"
-shell = "$"
-general = ">"
-
-{{ end }}

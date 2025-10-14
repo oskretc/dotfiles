@@ -4,7 +4,6 @@ theme = "tokyonight"
 [editor]
 mouse = true
 true-color = true
-bufferline = "always"
 line-number = "relative"
 color-modes = true
 popup-border = "all"

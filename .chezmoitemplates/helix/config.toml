@@ -135,7 +135,7 @@ F2 = [":write", ":sh sqlrun.sh"]
 {{ end }}
 
 
-c# for colemak
+# for colemak
 
 [keys.select]
 "m"  = "extend_char_left"

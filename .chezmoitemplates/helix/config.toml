@@ -73,7 +73,7 @@ mode.select = "SELECT"
 
 # delete entire line 
 "D" = "@xd"
-
+{{ end }}
 
 
 # F2 = [":write lazysql.sql", ":sh sqlrun.sh"]

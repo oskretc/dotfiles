@@ -8,6 +8,7 @@ line-number = "relative"
 color-modes = true
 popup-border = "all"
 rulers = [120]
+{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
 end-of-line-diagnostics = "hint"
 
 path-completion = false

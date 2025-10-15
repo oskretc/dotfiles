@@ -26,18 +26,18 @@ prepend_keymap = [
  	{ on = [ "g", "l", "s" ], run = "cd c:/LocalRepos3/Env/System",        desc = "LV System" },
 	{ on = [ "g", "l", "d" ], run = "cd c:/LocalRepos3/DUT_TC",        desc = "LV DUT TC" },
 
- 
+  { on = [ ";", "l" ], run = "shell --block lazygit",        desc = "Lazygit in foreground" }, 
  	{ on = [ "!" ], run = 'shell "cmd.exe" --block',        desc = "Open PowerShell here" },
- 	{ on = [ "p" ], run = 'plugin jump-to-char',        desc = "Jump to char" },
+ 	{ on = [ "j" ], run = 'plugin jump-to-char',        desc = "Jump to char" },
 	{ on = [ ";", "c" ], run = "shell --block 'chezmoi add %0'",        desc = "Chezmoi add" },
 	{ on = [ "T"], run = "plugin toggle-pane min-preview",        desc = "Chezmoi add" },
- { on = [ ";", "l" ], run = "shell --block lazygit",        desc = "Lazygit in foreground" },
  	{ on = [ ";", "s" , "s" ], run = "shell --block 'svnst'",        desc = "Svn Status" },
 	{ on = [ ";", "s" , "u" ], run = "shell --block 'svnup'",        desc = "Svn Update" },
  	{ on = [ ";", "s" , "l" ], run = "shell --block 'svnlog'",        desc = "Svn Log" },
 
  	{ on = [ ";", "d" ], run = 'plugin diff',        desc = "Diff the selected with the hovered file" },
 
+	{ on = [ ";", "b" ], run = "shell --block lv64.bat", desc = "make it 64"}
 ]
 
 

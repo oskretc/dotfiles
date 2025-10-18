@@ -75,10 +75,9 @@ mode.select = "SELECT"
 "k" = "search_next"
 "K" = "search_prev"
 
-{{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
-# delete entire line 
-"D" = "@xd"
-{{ end }}
+
+# delete from cursor to end of line 
+"D" = ["extend_to_line_end" , "delete_selection"]
 
 
 # F2 = [":write lazysql.sql", ":sh sqlrun.sh"]

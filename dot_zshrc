@@ -251,6 +251,16 @@ customize_agnoster() {
 
 customize_agnoster
 
+customize_prompt_onhost() {
+	echo $HOST
+	case $HOST in
+		bbjen100.nordicsemi.no) prompt_context() { prompt_segment 'red' '' 'bbb %n@%m' } ;;
+		osto2) prompt_context() { prompt_segment 'green' '' 'osto2 %n@%m' } ;;
+		*) echo $fg[default] ;;
+	esac
+}
+
+customize_prompt_onhost
 source_if_exists ~/.cargo/env
 
 

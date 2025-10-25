@@ -256,6 +256,7 @@ customize_prompt_onhost() {
 	case $HOST in
 		bbjen100.nordicsemi.no) prompt_context() { prompt_segment 'red' '' 'bare in %n@%m' } ;;
 		osto2) prompt_context() { prompt_segment 'blue' '' 'wsl in %n@%m' } ;;
+		vw) prompt_context() { prompt_segment 'pink' '' 'mint in %n@%m' } ;;
 		*) echo $fg[default] ;;
 	esac
 }

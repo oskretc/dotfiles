@@ -66,7 +66,7 @@ tab.m = ":buffer-previous"
 tab.i = ":buffer-next"
 tab.l = ":o ~/.config/helix/languages.toml"
 tab.c = ":config-open"
-
+tab.r = ":reload"
 
 # for colemak
 "m"  = "move_char_left"
@@ -92,19 +92,12 @@ C-l = ":sh zellij run -c -f --width 80%% --height 80%% -- lazygit"
 C-t = ":sh zellij action toggle-floating-panes"
 C-s = [":write"]
 C-b = ["save_selection"]
-C-q = ":q"
-C-r = ":rl"
-C-tab = ":bn"
-# ret = ["insert_mode","insert_newline"]
 ret = ["goto_word"]
 d = "delete_selection_noyank"
-A-d = "delete_selection"
+# A-d = "delete_selection"
 c = "change_selection_noyank"
-A-c = "change_selection"
-C-space = "insert_mode"
-"A-]" = ":bn"
-"A-[" = ":bp"
-C-p = "file_picker"
+# A-c = "change_selection"
+C-space = "insert_at_line_end"
 
 S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]

@@ -62,8 +62,8 @@ mode.select = "SELECT"
 
 [keys.normal]
 
-tab.n = ":buffer-previous"
-tab.e = ":buffer-next"
+tab.m = ":buffer-previous"
+tab.i = ":buffer-next"
 tab.l = ":o ~/.config/helix/languages.toml"
 tab.c = ":config-open"
 

@@ -95,7 +95,7 @@ C-b = ["save_selection"]
 ret = ["goto_word"]
 d = "delete_selection_noyank"
 # A-d = "delete_selection"
-c = "change_selection_noyank"
+# c = "change_selection_noyank"
 # A-c = "change_selection"
 C-space = "insert_at_line_end"
 

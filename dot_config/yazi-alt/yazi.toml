@@ -1,9 +1,10 @@
 [opener]
-openz = [
+open = [
 	{ run = 'yazi-picker_fromyazi.sh "$@"', desc = "OpenZ" },
 ]
 [open]
-prepend_rules = [
-	{ name = "*", use = "openz" },
+rules = [
+	{ name = "*", use = "open" },
+	{ name = "*/", use = "open" },
 
 ]

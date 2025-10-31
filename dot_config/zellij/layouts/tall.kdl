@@ -11,10 +11,10 @@ layout {
             
         }
         pane split_direction="vertical" {
-            terminal size="70%" name="terminal"
-            tailing  name="tailing"
+            terminal size="70%" name="terminal" borderless=true 
+            tailing  name="tailing" borderless=true 
         }
-        compact_bar size=2
+        compact_bar size=1
     }
 
     // TEMPLATES
@@ -40,6 +40,6 @@ layout {
 
     new_tab_template {
         pane
-        compact_bar size=2
+        compact_bar size=1
     }
 }

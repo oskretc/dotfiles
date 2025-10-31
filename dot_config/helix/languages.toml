@@ -4,6 +4,7 @@
 command = "ctags-lsp"
 
 # introduce new language server
+# https://github.com/estin/simple-completion-language-server
 [language-server.scls]
 command = "simple-completion-language-server"
 
@@ -111,6 +112,16 @@ rangeVariableTypes = true
 command = "llm-lsp"
 args = ["server", "-p", "codeium"]
 #################################
+
+[[language]]
+name = "make"
+scope = "source.make"
+file-types = [{ glob = "Makefile" }, { glob = "makefile" }, "make", "mk", "mak", {glob = "GNUmakefile" }, { glob = "OCamlMakefile" }]
+shebangs = ["make", "gmake"]
+injection-regex = "(make|makefile|Makefile|mk)"
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
+language-servers = ["ctags-lsp", "scls"]
 
 [[language]]
 name = "markdown"

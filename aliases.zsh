@@ -59,5 +59,5 @@ alias cch="cp ~/.config/helix/config.toml ~/.local/share/chezmoi/.chezmoitemplat
 alias lj="lumo"
 alias iss="intelli-shell"
 alias e='hx "$(fd | fzf --preview "bat {}")"'
-alias nl='f() { zellij action new-tab --layout tall --name $1 };f'
+alias nl='f() { zellij action new-tab --layout stacked --name $1 };f'
 

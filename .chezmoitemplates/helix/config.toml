@@ -1,5 +1,7 @@
 # theme = "monokai_aqua"
-theme = "tokyonight"
+# theme = "tokyonight"
+# theme = "dark_plus_oscar"
+theme = "pop-dark_oscar"
 
 [editor]
 mouse = true
@@ -61,11 +63,10 @@ mode.select = "SELECT"
 
 
 [keys.normal]
-
+tab.l = ":o ~/.config/helix/languages.toml"
 tab.m = ":buffer-previous"
 tab.i = ":buffer-next"
-tab.l = ":o ~/.config/helix/languages.toml"
-tab.c = ":config-open"
+tab.c = ":bc"
 tab.r = ":reload"
 
 # for colemak
@@ -146,7 +147,7 @@ F2 = [":write", ":sh sqlrun.sh"]
 
 [keys.normal.";"]
 q = ":q!"
-c = ":bc"
+c = ":config-open"
 r = ":config-reload"
 w = ":toggle soft-wrap.enable"
 

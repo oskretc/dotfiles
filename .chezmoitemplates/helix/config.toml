@@ -63,7 +63,6 @@ mode.select = "SELECT"
 
 
 [keys.normal]
-tab.l = ":o ~/.config/helix/languages.toml"
 tab.m = ":buffer-previous"
 tab.i = ":buffer-next"
 tab.c = ":bc"
@@ -147,9 +146,11 @@ F2 = [":write", ":sh sqlrun.sh"]
 
 [keys.normal.";"]
 q = ":q!"
-c = ":config-open"
-r = ":config-reload"
+c.o = ":config-open"
+c.r = ":config-reload"
+c.l = ":o ~/.config/helix/languages.toml"
 w = ":toggle soft-wrap.enable"
+
 
 
 {{ if eq .chezmoi.hostname "bbjen100" }}

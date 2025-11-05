@@ -9,7 +9,8 @@ local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabl
 tabline.setup({
   options = {
     icons_enabled = true,
-    theme = 'Catppuccin Mocha',
+    -- theme = 'Catppuccin Mocha',
+    theme = 'GruvboxDark',
     tabs_enabled = true,
     theme_overrides = {},
     section_separators = {

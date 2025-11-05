@@ -17,7 +17,14 @@ config.disable_default_key_bindings = false
 
 -- config.font = wezterm.font 'Fira Code'
 config.font = wezterm.font 'Hack Nerd Font'
-
+config.font_size = 16
+-- config.font = wezterm.font("MesloLGS NF")
+config.window_padding = {
+  left=2,
+  right= 2,
+  top=0,
+  bottom=0
+}
 config.hide_tab_bar_if_only_one_tab = true
 
 

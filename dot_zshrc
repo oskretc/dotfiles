@@ -249,26 +249,26 @@ source_if_exists ~/.config/hctl/hctl_completion.sh
 
 
 
-customize_agnoster() {
-	if [ -n "$SSH_CLIENT" ]; then
-		prompt_context() {
-			prompt_segment 'red' '' 'REMOTE ⚙ ⚡⚡⚡ ⚙ %n@%m '
-		}
-	fi
-}
+# customize_agnoster() {
+# 	if [ -n "$SSH_CLIENT" ]; then
+# 		prompt_context() {
+# 			prompt_segment 'red' '' 'REMOTE ⚙ ⚡⚡⚡ ⚙ %n@%m '
+# 		}
+# 	fi
+# }
 
-customize_agnoster
+# customize_agnoster
 
-customize_prompt_onhost() {
-	case $HOST in
-		bbjen100.nordicsemi.no) prompt_context() { prompt_segment 'red' '' 'bare in %n@%m' } ;;
-		osto2) prompt_context() { prompt_segment 'blue' '' 'wsl in %n@%m' } ;;
-		vw) prompt_context() { prompt_segment 'pink' '' 'mint in %n@%m' } ;;
-		*) echo $fg[default] ;;
-	esac
-}
+# customize_prompt_onhost() {
+# 	case $HOST in
+# 		bbjen100.nordicsemi.no) prompt_context() { prompt_segment 'red' '' 'bare in %n@%m' } ;;
+# 		osto2) prompt_context() { prompt_segment 'blue' '' 'wsl in %n@%m' } ;;
+# 		vw) prompt_context() { prompt_segment 'pink' '' 'mint in %n@%m' } ;;
+# 		*) echo $fg[default] ;;
+# 	esac
+# }
 
-customize_prompt_onhost
+# customize_prompt_onhost
 source_if_exists ~/.cargo/env
 
 

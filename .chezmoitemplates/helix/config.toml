@@ -127,6 +127,8 @@ F2 = [":write", ":sh sqlrun.sh"]
 {{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
 "u" = "@hi\""
 "U" = "@ha\""
+e.c = "@ha{"
+
 {{ end }}
 
 

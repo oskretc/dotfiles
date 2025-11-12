@@ -34,7 +34,7 @@ tabline.setup({
     tabline_c = { 'u' },
     tab_active = {{ Background = { Color = 'brown' } },
       'index',
-      { 'process', padding = 0 },
+      { 'process', padding = 1},
       '/',
       { 'cwd', padding = { left = 0, right = 1 } },
       { 'zoomed', padding = 0 },

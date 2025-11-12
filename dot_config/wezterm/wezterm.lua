@@ -2,8 +2,10 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
+local mydomains = require 'mydomains'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
+mydomains.apply_to_config(config)
 ----------------------------------------------------------------------------------------------------
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 tabline.setup({
@@ -29,15 +31,15 @@ tabline.setup({
   sections = {
     tabline_a = { 'mode' },
     tabline_b = { 'workspace' },
-    tabline_c = { ' ' },
-    tab_active = {
+    tabline_c = { 'u' },
+    tab_active = {{ Background = { Color = 'brown' } },
       'index',
-      { 'parent', padding = 0 },
+      { 'process', padding = 0 },
       '/',
       { 'cwd', padding = { left = 0, right = 1 } },
       { 'zoomed', padding = 0 },
     },
-    tab_inactive = { 'index', { 'process', padding = { left = 0, right = 1 } } },
+    tab_inactive = { 'index', { 'process', padding = { left = 1, right = 1 } } },
     tabline_x = { 'ram', 'cpu' },
     tabline_y = { 'datetime', 'battery' },
     tabline_z = { 'domain' },
@@ -58,7 +60,7 @@ config.disable_default_key_bindings = false
 
 -- config.font = wezterm.font 'Fira Code'
 config.font = wezterm.font 'Hack Nerd Font'
-config.font_size = 14.5
+config.font_size = 13.5
 -- config.font = wezterm.font("MesloLGS NF")
 config.window_padding = {
   left=2,

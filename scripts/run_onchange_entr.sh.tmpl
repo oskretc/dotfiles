@@ -1,5 +1,10 @@
 {{ if (and ( eq .chezmoi.os "linux") (eq .chezmoi.hostname "osto2" "bbjen100" "osto3" "vw")) -}}
 #!/bin/sh
-sudo apt install -y entr
+  {{ if eq .chezmoi.osRelease.id "ubuntu" }}
+	sudo apt install -y entr
+  {{ else if eq .chezmoi.osRelease.id "cachyos" }}
+
+
+{{ end -}}
 {{ end -}}
 

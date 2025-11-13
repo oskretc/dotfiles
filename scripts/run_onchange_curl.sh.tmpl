@@ -1,5 +1,10 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
-sudo apt install -y curl
+  {{ if eq .chezmoi.osRelease.id "ubuntu" }}
+	sudo apt install -y curl
 
+  {{ else if eq .chezmoi.osRelease.id "cachyos" }}
+
+
+{{ end -}}
 {{ end -}}

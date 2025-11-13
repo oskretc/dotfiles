@@ -1,8 +1,8 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
-  {{ if eq .chezmoi.osRelease.id "debian" }}
+  {{ if eq .chezmoi.osRelease.id "ubuntu" }}
     sudo apt install -y nala
-  {{ else if eq .chezmoi.osRelease.id "fedora" }}
+  {{ else if eq .chezmoi.osRelease.id "cachyos" }}
     echo "no nala"
 
   {{ end }}

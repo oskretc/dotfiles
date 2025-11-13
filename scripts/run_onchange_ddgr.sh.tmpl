@@ -1,4 +1,9 @@
 {{ if (and ( eq .chezmoi.os "linux") (eq .chezmoi.hostname "osto2" "bbjen100" "osto3" "vw")) -}}
 #!/bin/sh
-sudo nala install ddgr
+  {{ if eq .chezmoi.osRelease.id "ubuntu" }}
+	sudo nala install ddgr
+  {{ else if eq .chezmoi.osRelease.id "cachyos" }}
+	sudo pacman -S ddgr
+
+{{ end -}}
 {{ end -}}

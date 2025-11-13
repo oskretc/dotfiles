@@ -1,5 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/sh
+
+  {{ if eq .chezmoi.osRelease.id "ubuntu" }}
 sudo apt install -y zsh
 
 if [ ! -e ~/.oh-my-zsh ]; then
@@ -9,4 +11,7 @@ else
   echo "ohmyzsh installed"
   
 fi
+
+  {{ else if eq .chezmoi.osRelease.id "cachyos" }}
+{{ end -}}
 {{ end -}}

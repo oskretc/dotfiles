@@ -60,5 +60,4 @@ alias lj="lumo"
 alias iss="intelli-shell"
 alias e='hx "$(fd | fzf --preview "bat {}")"'
 alias nl='f() { zellij action new-tab --layout stacked --name $1 };f'
-# alias nln='f() { zellij a --create $1 --layout stacked };f'
-alias nln='f() { zellij a develop --create && zellij action new-tab --layout stacked --name $1 };f'
+alias nln='f() { zellij a $1 --create };f'

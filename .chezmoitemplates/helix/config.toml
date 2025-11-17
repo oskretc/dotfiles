@@ -167,7 +167,7 @@ animation-speed = 5
 
 [editor.cmdline]
 # Command line style: "bottom" (default) or "popup" (noice.nvim style)
-style = "popup"
+style = "bottom"
 
 # Show command type icons (default: true)
 show-icons = true

@@ -61,3 +61,6 @@ alias iss="intelli-shell"
 alias e='hx "$(fd | fzf --preview "bat {}")"'
 alias nl='f() { zellij action new-tab --layout stacked --name $1 };f'
 alias nln='f() { zellij a $1 --create };f'
+alias za='zellij action toggle-floating-panes'
+alias zls='zellij ls'
+alias zt='zellij action new-tab'

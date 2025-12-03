@@ -1,8 +1,7 @@
 @echo off
 
 set tmpfile=%TEMP%\yazi-cwd.%random%
-
-yazi %* --cwd-file="%tmpfile%"
+%USERPROFILE%\.local\bin\yazi.exe %* --cwd-file="%tmpfile%"
 
 :: If the file does not exist, then exit
 if not exist "%tmpfile%" exit /b 0

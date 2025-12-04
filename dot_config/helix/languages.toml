@@ -42,7 +42,7 @@ file-types = ["nxml", "xml", "svg", "xsd", "xslt", "xsl" ]
 language-servers = [ "xml" ]
 # language-servers = [ "xml","ctags-lsp" ]
 [language-server.xml]
-command = "lemminx-linux"
+command = "lemminx"
 
 [[language]]
 name = "c-sharp"

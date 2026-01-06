@@ -321,3 +321,5 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^e^e' edit-command-line
+
+source ~/.zsh-ai-cmd/zsh-ai-cmd.plugin.zsh

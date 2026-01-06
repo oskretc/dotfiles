@@ -317,6 +317,7 @@ eval "$(intelli-shell init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# this enables to edit command buffer in editor
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^e^e' edit-command-line

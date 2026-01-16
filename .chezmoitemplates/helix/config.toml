@@ -20,7 +20,10 @@ bufferline = "always"
 
 
 [editor.inline-diagnostics]
-cursor-line = "error"
+# cursor-line = "error"
+cursor-line = "hint"
+other-lines = "warning"
+
 
 [editor.file-picker]
 hidden = false

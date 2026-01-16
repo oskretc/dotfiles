@@ -157,35 +157,3 @@ d = "@<space>wvgd"
 p = "@<space>wq"
 
 
-{{ if eq .chezmoi.hostname "bbjen100" }}
-[editor.gradient-borders]
-enable = true
-thickness = 1
-direction = "radial"
-start-color = "#00FF00"        # Lime Green
-end-color = "#008000"          # Dark Green
-animation-speed = 5
-
-[editor.cmdline]
-# Command line style: "bottom" (default) or "popup" (noice.nvim style)
-style = "bottom"
-
-# Show command type icons (default: true)
-show-icons = true
-
-# Popup dimensions
-min-popup-width = 60    # Minimum width for popup cmdline
-max-popup-width = 80    # Maximum width for popup cmdline
-
-# Use full height when style is popup (removes bottom space, default: false)
-# Only applies when style = "popup"
-use-full-height = true
-
-# Customize command icons
-[editor.cmdline.icons]
-search = "/"
-command = ":"
-shell = "$"
-general = ">"
-
-{{ end }}

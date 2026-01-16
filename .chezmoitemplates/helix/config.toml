@@ -124,8 +124,8 @@ F2 = [":write", ":sh sqlrun.sh"]
 "a" = "select_textobject_around"
 "i" = "select_textobject_inner"
 {{ if eq .chezmoi.hostname "bbjen100" "osto2" "osto3" }}
-"u" = "@hi\""
-"U" = "@ha\""
+e.u = "@hi\""
+e.U = "@ha\""
 e.c = "@ha{"
 
 {{ end }}

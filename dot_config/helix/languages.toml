@@ -126,7 +126,7 @@ language-servers = ["ctags-lsp", "scls"]
 [[language]]
 name = "markdown"
 formatter = { command = 'prettier', args = ["--parser", "markdown"] }
-language-servers = ["lsp-ai"]
+language-servers = ["markdown-oxide", "lsp-ai"]
 
 [[language]]
 name = "html"

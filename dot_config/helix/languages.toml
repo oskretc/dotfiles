@@ -151,9 +151,23 @@ language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "typescript"
+scope = "sources.ts"
+injection-regex = "(ts|typescript)"
+language-id = "typescript"
+file-types = ["ts", "mts", "cts"]
+shebangs = ["deno", "bun", "ts-node"]
+roots = [ "package.json", "tsconfig.json" ]
+comment-token = "//"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "typescript-language-server" ]
+indent = { tab-width = 2, unit = "  " }
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
-language-servers = ["ctags-lsp"]
+# language-servers = ["ctags-lsp"]
+
+[[grammar]]
+name = "typescript"
+source = { git = "https://github.com/tree-sitter/tree-sitter-typescript", rev = "75b3874edb2dc714fb1fd77a32013d0f8699989f", subpath = "typescript" }
 
 [[language]]
 name = "tsx"

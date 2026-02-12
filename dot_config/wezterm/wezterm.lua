@@ -58,9 +58,14 @@ tabline.apply_to_config(config)
 config.disable_default_key_bindings = false
 
 
+-- config.font = wezterm.font ('Monofur Nerd Font Mono', { weight = 'Bold' })
+config.font = wezterm.font 'ZedMono NF Extd'
 -- config.font = wezterm.font 'Fira Code'
-config.font = wezterm.font 'Hack Nerd Font'
-config.font_size = 13.5
+-- config.font = wezterm.font 'JetBrainsMono NF'
+-- config.font = wezterm.font 'Hack Nerd Font'
+config.font_size = 12.0
+-- config.font = wezterm.font 'Inconsolata'
+-- config.font_size = 13.5
 -- config.font = wezterm.font("MesloLGS NF")
 config.window_padding = {
   left=2,
@@ -130,19 +135,25 @@ local dimmer2 = { brightness = 0.03, hue = 1.0, saturation = 1.0 }
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
 
-  config.background = {
-    {
-
-      -- source = { File = 'c:/users/osto/.config/wezterm/bg.jpg'},
-      source = { File = 'C:/Users/osto/.config/wezterm/wpl2.jpg'},
-      repeat_x = 'Mirror',
-      hsb = dimmer,
-      -- When the viewport scrolls, move this layer 10% of the number of
-      -- pixels moved by the main viewport. This makes it appear to be
-      -- further behind the text.
-      -- attachment = { Parallax = 0.1 },    
-    }
+  config.window_background_gradient = {
+    colors = { '#000000', '#002033','#000066' },
+  -- Specifies a Linear gradient starting in the top left corner.
+    orientation = { Linear = { angle = -45.0 } },
   }
+  -- config.background = {
+  --   {
+
+  --     -- source = { File = 'c:/users/osto/.config/wezterm/bg.jpg'},
+  --     -- source = { File = 'C:/Users/osto/.config/wezterm/wpl2.jpg'},
+      -- repeat_x = 'Mirror',
+      -- source = { File = 'C:/Users/osto/.config/wezterm/wpl2.jpg'},
+      -- hsb = dimmer,
+  --     -- When the viewport scrolls, move this layer 10% of the number of
+  --     -- pixels moved by the main viewport. This makes it appear to be
+  --     -- further behind the text.
+  --     -- attachment = { Parallax = 0.1 },    
+  --   }
+  -- }
   
 else 
   

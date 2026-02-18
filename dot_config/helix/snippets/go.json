@@ -4,6 +4,11 @@
     "body":["if err != nil {", "\t$0", "}"],
     "description": "If error is not nil"
   }, 
+  "If error print and return": {
+    "prefix":["iep", "if err"],
+    "body":["if err != nil {", "\tlog.Printf(\"err: %v\", err)","\treturn", "}"],
+    "description": "If error print and return"
+  }, 
   "Function": {
     "prefix":["fun"],
     "body":["func $1() {","\t$2","}"],

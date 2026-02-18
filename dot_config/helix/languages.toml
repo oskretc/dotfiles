@@ -24,6 +24,20 @@ feature_citations = false            # enable citation completion (only on `cita
 RUST_LOG = "info,simple-completion-language-server=info"
 LOG_FILE = "/tmp/completion.log"
 
+[[language]]
+name = "nxml"
+scope = "source.nxml"
+file-types = ["nxml"]
+language-servers = ["nxml-lsp"]
+grammar = "xml"
+
+[language-server.nxml-lsp]
+
+command = "/home/osto/gitrepos/nxml_gounmarshall/nxml-lsp"
+args = ["lsp" , "-l", "/home/osto/gitrepos/nxml_gounmarshall/log_nxml-lsp.txt"]
+# args = ["--stdio"]
+# enviroment = {"NXML-LSP_LOG"= "/home/osto/gitrepos/nxml_gounmarshall/log_nxml-lsp.txt"}
+
 # append language server to existed languages
 [[language]]
 name = "rust"
@@ -36,7 +50,8 @@ language-servers = ["ctags-lsp"]
 
 [[language]]
 name = "xml"
-file-types = ["nxml", "xml", "svg", "xsd", "xslt", "xsl" ]
+file-types = ["xml", "svg", "xsd", "xslt", "xsl" ]
+# file-types = ["nxml", "xml", "svg", "xsd", "xslt", "xsl" ]
 # auto-format = true
 # formatter = { command = "xmllint", args = ["--format", "-"] }
 language-servers = [ "xml" ]
@@ -85,6 +100,9 @@ language-servers = ["sqls"]
 command = "sqls"
 # args = ["-t", "-l", "/home/osto/tmp/sqls.log"]
 
+# https://github.com/erasin/hx-lsp
+[language-server.hx-lsp]
+command = "hx-lsp"
 
 ######## GO #####################
 [[language]]
@@ -92,7 +110,8 @@ name = "go"
 auto-format = true
 formatter = { command = "goimports" }
 # language-servers = ["scls", "gopls"]
-language-servers = ["scls", "gopls", "llm-lsp"]
+# language-servers = ["scls", "gopls", "llm-lsp"]
+language-servers = ["hx-lsp", "gopls", "llm-lsp"]
 # language-servers = ["gopls"]
 
 [language-server.gopls]

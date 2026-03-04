@@ -53,8 +53,7 @@ alias en="y"
 alias svnu="svn update --username osto --password $SVNPASS"
 alias svnst="svn status --username osto --password $SVNPASS"
 alias svndiff="svndiff.sh"
-alias ct="zellij action close-tab"
-alias nt="zellij action new-tab"
+
 alias cch="cp ~/.config/helix/config.toml ~/.local/share/chezmoi/.chezmoitemplates/helix/config.toml; gaa ; gcmsg 'update helix config' ; gp "
 alias lj="lumo"
 alias iss="intelli-shell"
@@ -64,5 +63,9 @@ alias nln='f() { zellij a $1 --create };f'
 alias za='zellij action toggle-floating-panes'
 alias zls='zellij ls'
 alias zt='zellij action new-tab'
+alias zct="zellij action close-tab"
+alias ct="zellij action close-tab"
+alias nt="zellij action new-tab"
 alias ghc="gh repo list --limit 1000 | fzf  | awk '{print $1}' | xargs -r gh repo clone"
+alias lt="lazytail"
 

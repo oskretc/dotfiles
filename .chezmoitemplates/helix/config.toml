@@ -158,4 +158,8 @@ d = "@<space>wvgd"
 # close the curret split, if no splits, it quits
 p = "@<space>wq"
 
+[keys.normal.g]
+v = "jump_backward"
+
+
 

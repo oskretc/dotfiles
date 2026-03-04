@@ -67,5 +67,5 @@ alias zct="zellij action close-tab"
 alias ct="zellij action close-tab"
 alias nt="zellij action new-tab"
 alias ghc="gh repo list --limit 1000 | fzf  | awk '{print $1}' | xargs -r gh repo clone"
-alias lt="lazytail"
+alias lt='lazytail "$(fd -I -e log | fzf --preview "bat {}")"'
 

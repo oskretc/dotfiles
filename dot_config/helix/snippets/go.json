@@ -18,5 +18,10 @@
     "prefix":["typ"],
     "body":["type $1 struct {", "${2:Name } ${3:string }", "}"],
     "description": "New Type"
+  } , 
+  "Printf": {
+    "prefix":["lpf"],
+    "body":["log.Printf(\"$1: \",$2)"],
+    "description": "Log Printf"
   } 
 }

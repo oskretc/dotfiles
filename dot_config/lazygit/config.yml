@@ -6,3 +6,4 @@ keybinding:
   universal:
     prevItem-alt: e
     nextItem-alt: n
+    edit: o

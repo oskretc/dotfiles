@@ -13,14 +13,21 @@ open = [
 
 	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
 
+
 ]
 
+opencsv = [
+  { run = "tw %s --separator ;", block = true,  desc = "Open csv with TW"},
+]
 [open]
 prepend_rules = [
 
-	{ name = "*.ini", use = "edit" },
-	{ name = "*.toml", use = "edit" },
-	{ name = "*.nXML", use = "open" },
+	{ url = "*.ini", use = "edit" },
+	{ url = "*.toml", use = "edit" },
+	{ url = "*.nXML", use = "open" },
+	{ url = "*.nXML", use = "open" },
+{ url = "*.csv", use = "opencsv" },
+{ url = "*.xlsx", use = "opencsv" },
 
 
 ]

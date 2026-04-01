@@ -22,6 +22,8 @@ bufferline = "always"
 [editor.inline-diagnostics]
 # cursor-line = "error"
 cursor-line = "hint"
+prefix-len = 10
+
 other-lines = "warning"
 
 
@@ -157,6 +159,8 @@ w = ":toggle soft-wrap.enable"
 d = "@<space>wvgd"
 # close the curret split, if no splits, it quits
 p = "@<space>wq"
+a = ":insert-output suggest_doc.sh %{current_working_directory} %{file_path_absolute} %{cursor_line}"
+
 
 [keys.normal.g]
 v = "jump_backward"
